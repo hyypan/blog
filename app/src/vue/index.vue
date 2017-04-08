@@ -2,6 +2,7 @@
     <div>
         <header-component/>
         <div>this is template body</div>
+        <div v-model="meg">{{msg}}</div>
         <other-component/>
     </div>
 </template>
