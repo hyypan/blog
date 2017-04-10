@@ -1,0 +1,43 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "blog for python",
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^2.2.6",
+    "webpack": "^2.3.3"
+  },
+  "devDependencies": {
+    "babel-runtime": "^5.8.38",
+    "css-loader": "^0.28.0",
+    "express": "^4.15.2",
+    "html-webpack-plugin": "^2.28.0",
+    "marked": "0.3.5",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.3",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-hot-middleware": "^2.18.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config config/dev.config.js",
+    "dev": "webpack-dev-server --config config/dev.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyypan/blog.git"
+  },
+  "keywords": [
+    "python",
+    "node.js",
+    "vue",
+    "webpack"
+  ],
+  "author": "yangpeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyypan/blog/issues"
+  },
+  "homepage": "https://github.com/hyypan/blog#readme"
+}
