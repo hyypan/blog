@@ -9,7 +9,7 @@ export default new Router({
   hashbang: false,
   routes: [
     {
-      path: '/hello',
+      path: '/',
       name: 'content',
       component: require('../components/Hello.vue')
     },
