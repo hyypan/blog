@@ -1,9 +1,15 @@
 <template>
-<div>fsfsdfsd</div>
+<div class="div">{{msg}}</div>
 </template>
+<style>
+    html, body{
+        background:#fff;
+    }
+</style>
 <style scoped>
-    body{
-        background-color:black;
+    .div{
+        color:red;
+        background:yellow;
     }
 </style>
 <script>
