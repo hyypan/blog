@@ -10,7 +10,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'content',
+      name: 'hello',
       component: require('../components/Hello.vue')
     },
     {
