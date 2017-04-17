@@ -51,6 +51,10 @@ export default {
     position: relative;
     top: 15%;
 }
+.face{
+    width: 119%;
+    height: 102%;
+}
 .img{
     display: block;
     width: 120px;
@@ -98,5 +102,13 @@ ul img{
     border-radius: 8px;
     font-size: 19px;
     padding-top: 7px;
+}
+@media screen and (max-width: 600px) {
+ul img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
 }
 </style>
