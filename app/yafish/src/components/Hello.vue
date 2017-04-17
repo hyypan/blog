@@ -1,8 +1,19 @@
 <template>
   <div class="content">
-    <div class="list">这个地方放目录</div>
-    <div class="listRight">这个地方是目录显示出来的内容</div>
-    <div class="listBottom">这里放另一部分内容</div>
+    <div class="vatar">
+      <div class="face">
+        <img class="img" src="../assets/pis.jpg"/>
+        <h1>YaphetS</h1>
+        <p>嗨！这里收集了关于linux,Python，vue,webpack相关的东西，停留2分钟，受益一生</p>
+        <p>联系我:</p>
+        <ul>
+          <li><img class="first-img" src="../assets/wx.jpg"/> </li>
+          <li><img src="../assets/qq.jpg"/> </li>
+          <li><a href="https://github.com/hyypan"><img src="../assets/github.jpg"/> </a></li>
+        </ul>
+        <a href="./content"><p class="enter">点击进入</p></a>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -32,37 +43,58 @@ export default {
     background-image:url('https://onevcat.com//assets/images/background-cover.jpg');
     background-repeat: no-repeat;
 }
-/*
-.list{
+.vatar{
+    //background: #484141;
+    width: 30%;
+    height: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: 15%;
+}
+.img{
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin: 0 auto;
+}
+.face h1{
     text-align: center;
-    -ms-transform:rotate(-5deg);
-    -moz-transform:rotate(-5deg);
-    -webkit-transform:rotate(-5deg);
-    -o-transform:rotate(-5deg);
-    height: 400px;
-    width: 20%;
-    background: beige;
-    border-right: 1px solid silver;
-    position: relative;
-    float: left;
-    margin-top:6%;
-    padding-top: 17px;
+    border-bottom: 1px solid sienna;
 }
-.listRight{
-    -ms-transform:rotate(2deg);
-    -moz-transform:rotate(2deg);
-    -webkit-transform:rotate(2deg);
-    -o-transform:rotate(2deg);
-    background: beige;
-    width: 66%;
-    position: relative;
-    float: left;
-    margin: 10 auto;
-    left: 83px;
-    height: 400px;
-    margin-top: 6%;
-    padding:17px;
+.face p{
+    text-align: center;
 }
-*/
 
+.face ul{
+    display: -webkit-inline-box;
+    list-style: none;
+}
+ul{
+    width: 100%;
+    padding-left: 0px;
+    border-bottom: 1px solid sienna;
+}
+.first-img{
+
+}
+.face a{
+    text-decoration: none;
+}
+
+ul img{
+    width: 100px;
+    height: 100px;
+    margin-right: 48px;
+    border-radius: 50px;
+}
+.enter{
+    width: 100px;
+    height: 30px;
+    border: 1px solid white;
+    margin: 0 auto;
+    border-radius: 8px;
+    font-size: 19px;
+    padding-top: 7px;
+}
 </style>
