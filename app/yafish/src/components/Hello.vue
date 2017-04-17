@@ -34,7 +34,7 @@ export default {
     margin-top:6%;
 }
 .listRight{
-    background: rebeccapurple;
+    background: beige;
     width: 76%;
     position: relative;
     float: left;
