@@ -1,95 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e346f31-ad9a-427a-9564-04f3b34cc6b7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperscript-attribute-to-property/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperscript-attribute-to-property/.zuul.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperscript-attribute-to-property/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperscript-attribute-to-property/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperscript-attribute-to-property/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperscript-attribute-to-property/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperscript-attribute-to-property/test/basic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/bench/loop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/bench/raw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/example/deku/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/example/deku/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/example/deku/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/example/hyperscript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/example/main_loop/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/example/main_loop/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/example/main_loop/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/example/react.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/example/react_browser/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/example/react_browser/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/example/react_browser/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/example/vdom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/readme.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/attr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/attr_to_prop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/children.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/comment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/concat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/esc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/ignore_surounding_whitespace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/key.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/multi_elem_error.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/style.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/svg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/title.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/types.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/value.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/vdom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/hyperx/test/z_hyperscript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/util/node_modules/inherits/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/util/node_modules/inherits/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/util/node_modules/inherits/inherits.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/util/node_modules/inherits/inherits_browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/util/node_modules/inherits/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/util/node_modules/inherits/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/vue-html/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/vue-html/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/vue-html/dist/vue-html.common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/vue-html/dist/vue-html.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/vue-html/dist/vue-html.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/vue-html/dist/vue-html.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yafish/node_modules/vue-html/package.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/arr-flatten/README.md" afterPath="$PROJECT_DIR$/app/yafish/node_modules/arr-flatten/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/arr-flatten/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/arr-flatten/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/big.js/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/big.js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/commoner/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/commoner/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/copy-webpack-plugin/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/copy-webpack-plugin/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/emojis-list/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/emojis-list/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/find-cache-dir/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/find-cache-dir/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/ftp/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/ftp/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/html-withimg-loader/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/html-withimg-loader/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/inherits/inherits.js" afterPath="$PROJECT_DIR$/app/yafish/node_modules/inherits/inherits.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/inherits/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/inherits/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/istanbul/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/istanbul/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/json5/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/json5/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/loader-utils/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/loader-utils/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/log4js/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/log4js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/mkdirp/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/mkdirp/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/mocha-nightwatch/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/mocha-nightwatch/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/mocha/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/mocha/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/object-assign/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/object-assign/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/process/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/process/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/query-string/index.js" afterPath="$PROJECT_DIR$/app/yafish/node_modules/query-string/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/query-string/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/query-string/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/query-string/readme.md" afterPath="$PROJECT_DIR$/app/yafish/node_modules/query-string/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/renderkid/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/renderkid/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/rimraf/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/rimraf/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/util/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/util/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/vue-hot-reload-api/index.js" afterPath="$PROJECT_DIR$/app/yafish/node_modules/vue-hot-reload-api/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/node_modules/vue-hot-reload-api/package.json" afterPath="$PROJECT_DIR$/app/yafish/node_modules/vue-hot-reload-api/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/components/Content.vue" afterPath="$PROJECT_DIR$/app/yafish/src/components/Content.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/components/Hello.vue" afterPath="$PROJECT_DIR$/app/yafish/src/components/Hello.vue" />
-    </list>
+    <list default="true" id="7e346f31-ad9a-427a-9564-04f3b34cc6b7" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Hello.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="415">
-              <caret line="73" column="3" lean-forward="true" selection-start-line="73" selection-start-column="3" selection-end-line="73" selection-end-column="3" />
+              <caret line="73" column="3" lean-forward="false" selection-start-line="73" selection-start-column="3" selection-end-line="73" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -129,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Content.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -320,54 +232,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="yafish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yafish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yafish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -677,9 +541,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="286" y="60" width="1331" height="882" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.257564" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.257564" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5030211" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -975,7 +838,7 @@
     <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Hello.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
-          <caret line="73" column="3" lean-forward="true" selection-start-line="73" selection-start-column="3" selection-end-line="73" selection-end-column="3" />
+          <caret line="73" column="3" lean-forward="false" selection-start-line="73" selection-start-column="3" selection-end-line="73" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -983,7 +846,7 @@
     <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Content.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding />
         </state>
       </provider>

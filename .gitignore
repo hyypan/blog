@@ -1,5 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
-.gitignore
 env
 app/yafish/node_modules
 playbooks/
