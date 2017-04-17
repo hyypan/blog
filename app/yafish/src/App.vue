@@ -30,16 +30,14 @@ html, body{
 
 }
 .navi{
-    display:none;
     width: 100%;
     height: 10%;
-    background: burlywood;
+    //background: beige;
 }
 .footer{
-    display:none;
     width: 100%;
     height:10%;
-    background: black;
+    //background: beige;
 }
 
 </style>
