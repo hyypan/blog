@@ -22,15 +22,23 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 .content{
-    height:80%;
+    //font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    //-webkit-font-smoothing: antialiased;
+    //-moz-osx-font-smoothing: grayscale;
+    height:100%;
+    background-image: url('../assets/bg.jpg');
+    //background-image:url('https://onevcat.com//assets/images/background-cover.jpg');
+    //background-repeat: no-repeat;
 }
+/*
 .list{
     text-align: center;
-    -ms-transform:rotate(-5deg); 	/* IE 9 */
-    -moz-transform:rotate(-5deg); 	/* Firefox */
-    -webkit-transform:rotate(-5deg); /* Safari 和 Chrome */
-    -o-transform:rotate(-5deg); 	/* Opera */
+    -ms-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -webkit-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
     height: 400px;
     width: 20%;
     background: beige;
@@ -41,10 +49,10 @@ export default {
     padding-top: 17px;
 }
 .listRight{
-    -ms-transform:rotate(2deg); 	/* IE 9 */
-    -moz-transform:rotate(2deg); 	/* Firefox */
-    -webkit-transform:rotate(2deg); /* Safari 和 Chrome */
-    -o-transform:rotate(2deg); 	/* Opera */
+    -ms-transform:rotate(2deg);
+    -moz-transform:rotate(2deg);
+    -webkit-transform:rotate(2deg);
+    -o-transform:rotate(2deg);
     background: beige;
     width: 66%;
     position: relative;
@@ -55,6 +63,6 @@ export default {
     margin-top: 6%;
     padding:17px;
 }
-
+*/
 
 </style>

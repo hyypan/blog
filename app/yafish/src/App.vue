@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <div class="navi">header</div>
     <router-view></router-view>
-    <div class="footer">footer</div>
   </div>
 </template>
 
@@ -12,7 +10,7 @@ export default {
 }
 </script>
 
-<style>
+<style scope>
 html, body{
   background:red;
   height:100%;
@@ -21,14 +19,9 @@ html, body{
 
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
     height:100%;
-    background-image: url('assets/bg.jpg');
-
-
 }
+/*
 .navi{
     width: 100%;
     height: 10%;
@@ -39,5 +32,5 @@ html, body{
     height:10%;
     //background: beige;
 }
-
+*/
 </style>
