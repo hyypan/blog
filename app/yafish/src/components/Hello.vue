@@ -89,7 +89,7 @@ ul img{
     border-radius: 50px;
 }
 .enter{
-    width: 100px;
+    width:98%;
     height: 30px;
     border: 1px solid white;
     margin: 0 auto;
