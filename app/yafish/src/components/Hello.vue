@@ -28,8 +28,8 @@ export default {
     //-webkit-font-smoothing: antialiased;
     //-moz-osx-font-smoothing: grayscale;
     height:100%;
-    background-image: url('../assets/bg.jpg');
-    //background-image:url('https://onevcat.com//assets/images/background-cover.jpg');
+    //background-image: url('../assets/bg.jpg');
+    background-image:url('https://onevcat.com//assets/images/background-cover.jpg');
     //background-repeat: no-repeat;
 }
 /*
