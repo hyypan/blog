@@ -1,1 +1,19 @@
-django=1.11
+django==1.10
+beautifulsoup4 #解析html
+Django==1.9.8 # django
+django-admin-easy # django-admin的辅助插件，可以快速生成action、自定义字段、自定义页面
+ipython # python的易用调试客户端
+psycopg2 # postgresql的数据库驱动
+pyyaml # yaml解析包
+django-import-export # django-admin的扩展，给admin增加导入导出功能
+django-filter==0.14.0 # 给django的url增加filter功能，主要是配合restframework使用，可以直接支持字段检索条件
+django-extensions # django的扩展包，包括数据模型的扩展（如TimestampModel等）
+django-environ==0.4.0 # django从环境变量读取配置的快捷包
+dj-database-url==0.4.1 # 配置文件中简化数据库配置的包
+django-model-utils==2.5.2 #django模型扩展工具
+requests[security] # http请求工具包
+python3-keyczar #model加密字段
+django-encrypted-fields-python3
+ansible
+fabric3
+django_rq

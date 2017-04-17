@@ -3,9 +3,9 @@
   <component name="FacetManager">
     <facet type="django" name="Django">
       <configuration>
-        <option name="rootFolder" value="$MODULE_DIR$/boke/boke" />
-        <option name="settingsModule" value="settings.py" />
-        <option name="manageScript" value="$MODULE_DIR$/boke/manage.py" />
+        <option name="rootFolder" value="$MODULE_DIR$/boke" />
+        <option name="settingsModule" value="boke/settings.py" />
+        <option name="manageScript" value="manage.py" />
         <option name="environment" value="&lt;map/&gt;" />
       </configuration>
     </facet>
