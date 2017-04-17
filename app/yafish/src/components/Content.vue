@@ -16,7 +16,7 @@
 export default{
   data () {
     return {
-      msg: '11111'
+      msg: '正在开发中'
     }
   }
 }

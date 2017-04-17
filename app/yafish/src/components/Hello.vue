@@ -60,6 +60,7 @@ export default {
 }
 .face h1{
     text-align: center;
+    padding-bottom: 13px;
     border-bottom: 1px solid sienna;
 }
 .face p{
@@ -72,6 +73,7 @@ export default {
 }
 ul{
     width: 100%;
+    padding-bottom: 13px;
     padding-left: 0px;
     border-bottom: 1px solid sienna;
 }
