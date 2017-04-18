@@ -42,6 +42,7 @@ export default {
     //background-image: url('../assets/bg.jpg');
     background-image:url('https://onevcat.com//assets/images/background-cover.jpg');
     background-repeat: no-repeat;
+    background-position: center;
 }
 .vatar{
     //background: #484141;
