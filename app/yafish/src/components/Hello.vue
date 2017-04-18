@@ -11,7 +11,7 @@
           <li><img src="../assets/qq.jpg"/> </li>
           <li><a href="https://github.com/hyypan"><img src="../assets/github.jpg"/> </a></li>
         </ul>
-        <a v-link="content"><p class="enter">点击进入</p></a>
+        <router-link to="content"><p class="enter">点击进入</p></router-link>
       </div>
     </div>
   </div>
