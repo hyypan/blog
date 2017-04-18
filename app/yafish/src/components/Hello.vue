@@ -110,5 +110,8 @@ ul img{
     margin-right: 20px;
     border-radius: 15px;
 }
+.face p{
+    font-size: 10px;
+}
 }
 </style>
