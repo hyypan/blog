@@ -18,6 +18,15 @@ export default{
     return {
       msg: '正在开发中'
     }
-  }
+  },
+    mounted: function(){
+
+    },
+    methods: {
+
+    },
+    created: function(){
+
+    }
 }
 </script>

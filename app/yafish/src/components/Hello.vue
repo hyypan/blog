@@ -115,5 +115,11 @@ ul img{
 .face p{
     font-size: 10px;
 }
+.enter{
+    width: 119px;
+    height: 18px;
+    font-size: 15px;import
+    padding-top: 3px;
+}
 }
 </style>

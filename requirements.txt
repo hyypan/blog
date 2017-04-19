@@ -1,6 +1,5 @@
 django==1.10
 beautifulsoup4 #解析html
-Django==1.9.8 # django
 django-admin-easy # django-admin的辅助插件，可以快速生成action、自定义字段、自定义页面
 ipython # python的易用调试客户端
 psycopg2 # postgresql的数据库驱动
