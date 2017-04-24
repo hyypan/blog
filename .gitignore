@@ -2,3 +2,4 @@
 env
 app/yafish/node_modules
 playbooks/
+boke/.env

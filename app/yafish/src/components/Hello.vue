@@ -47,15 +47,15 @@ export default {
 }
 .vatar{
     //background: #484141;
-    width: 30%;
-    height: 60%;
     margin: 0 auto;
     position: relative;
     top: 15%;
 }
 .face{
-    width: 119%;
-    height: 102%;
+    width: 394px;
+    height: 489px;
+    //background: yellow;
+    margin: 0 auto;
 }
 .img{
     display: block;
@@ -97,20 +97,32 @@ ul img{
     border-radius: 50px;
 }
 .enter{
-    width:98%;
+    width: 200px;
     height: 30px;
     border: 1px solid white;
     margin: 0 auto;
     border-radius: 8px;
     font-size: 19px;
-    padding-top: 7px;
+    padding-top: 10px;
+    /* letter-spacing: 38px; */
+    letter-spacing: 26px;
+    /* margin-left: 0; */
+    padding-left: 40px;
 }
 @media screen and (max-width: 600px) {
 ul img{
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    margin-right: -11px;
     border-radius: 15px;
+}
+ul li{
+    margin-left: 42px;
+}
+
+.face{
+    width: 300px;
+    height: 422px;
 }
 .face p{
     font-size: 10px;
@@ -120,6 +132,8 @@ ul img{
     height: 18px;
     font-size: 15px;import
     padding-top: 3px;
+    letter-spacing: 11px;
+    padding-left: 11px;
 }
 }
 </style>

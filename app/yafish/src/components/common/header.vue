@@ -7,9 +7,10 @@ header{
     height: 90px;
     width: 100%;
     float: left;
-    background:blue;
+    background: #ffffff;
     z-index: 20;
-}
+    border-bottom: 1px solid hsla(0, 0%, 76%, 0.3)
+    }
 </style>
 <script>
     export default{

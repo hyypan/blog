@@ -13,7 +13,6 @@
 <style scoped>
     .content{
         color:red;
-        background:yellow;
         position: relative;
         float: left;
         width: 100%;
