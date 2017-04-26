@@ -1,14 +1,15 @@
 <template>
   <header>
+    <span>YaphetS的个人网站</span>
     <ul>
-      <li>python</li>
-      <li>vue</li>
-      <li>linux</li>
-      <li>其他</li>
+      <li class="liPre">首页</li>
+      <li class="liPre">最热文章</li>
+      <li class="liPre">最新文章</li>
+      <li class="liPre">其他</li>
       <li>
         <div class="secondLine">
-          <span class="inputLeft">搜索</span>
-          <input class="search" @click="inputClick"/>
+          <span class="inputLeft"></span>
+          <input class="search" @click="inputClick" placeholder="搜索"/>
           <div class="inputReft"><img src="../../assets/search.png"></img></div>
         </div>
       </li>
@@ -31,8 +32,8 @@ ul{
     list-style: none;
 }
 ul li{
-    margin-left: 50px;
-    font-size: 23px;
+    //margin-left: 50px;
+    font-size: 18px;
     margin-top: 20px;
 }
 .inputLeft{
@@ -50,6 +51,7 @@ ul li{
     border-top-left-radius: 23px;
     border-bottom-left-radius: 23px;
     padding-left: 4px;
+    background: #c1c1c1;
 }
 .search{
     display: block;
@@ -59,6 +61,8 @@ ul li{
     border: 1px solid #c1c1c1;
     border-left:none;
     border-right: none;
+    background: #c1c1c1;
+    font-size: 14px;
 }
 .search:focus{
     //outline: -webkit-focus-ring-color auto 1px;
@@ -76,9 +80,19 @@ ul li{
     border-left: none;
     border-bottom-right-radius: 23px;
     border-top-right-radius: 23px;
+    background: #c1c1c1;
 }
 .inputReft img{
   width:36px;
+}
+.liPre:hover{
+  background:#c1c1c1;
+}
+.liPre{
+    padding-top: 7px;
+    width: 106px;
+    text-align: center;
+
 }
 </style>
 <script>
