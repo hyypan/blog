@@ -16,3 +16,4 @@ django-encrypted-fields-python3
 ansible
 fabric3
 django_rq
+pillow
