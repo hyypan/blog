@@ -129,6 +129,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_ROOT = BASE_DIR + '/yafish'
-BASE_URL = '/banner'
+BASE_URL = '/banner/'
 MEDIA_URL = '/media/'
 print('MEDIA_ROOT', MEDIA_ROOT)
