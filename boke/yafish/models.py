@@ -1,13 +1,24 @@
 from __future__ import unicode_literals
+
+from django.core.files.storage import FileSystemStorage
 from model_utils import models as util_models
 from django.db import models
 
 # Create your models here.
 
 
+class BannerStorage(FileSystemStorage):
+    from boke import settings
+
+    def __init__(self, location=settings.MEDIA_ROOT, base_url=settings.BASE_URL, file_permissions_mode=None,
+                 directory_permissions_mode=None):
+        super(BannerStorage, self).__init__(location=location, base_url=base_url, file_permissions_mode=None,
+                                            directory_permissions_mode=None)
+
+
 class Banner(util_models.TimeStampedModel):
     name = models.CharField(verbose_name='轮播图片名称', max_length=100, blank=True, null=True)
-    banner_img = models.ImageField(verbose_name='图片')
+    banner_img = models.ImageField(verbose_name='图片', upload_to='banner_imgs/', storage=BannerStorage())
     seq = models.SmallIntegerField(verbose_name='图片标识')
 
     class Meta:
