@@ -19,25 +19,35 @@
       <div class="titles">
         <table cellspacing="30">
           <tr>
-            <td><img class="imgsTwo" src="../assets/python.png"/>1</td>
-            <td><img class="imgsTwo" src="../assets/logo.png"/>1</td>
-            <td><img class="imgsTwo" src="../assets/logo.png"/>1</td>
-            <td><img class="imgsTwo" src="../assets/logo.png"/>1</td>
+            <td><img class="imgsTwo" src="../assets/python.png"/>python</td>
+            <td><img class="imgsTwo" src="../assets/logo.png"/>vue</td>
+            <td><img class="imgsTwo" src="../assets/logo.png"/>linux</td>
+            <td><img class="imgsTwo" src="../assets/logo.png"/>ansible</td>
           </tr>
           <tr>
-            <td><img class="imgsTwo" src="../assets/logo.png"/>1</td>
-            <td><img class="imgsTwo" src="../assets/logo.png"/>1</td>
-            <td><img class="imgsTwo" src="../assets/logo.png"/>1</td>
-            <td><img class="imgsTwo" src="../assets/logo.png"/>1</td>
+            <td><img class="imgsTwo" src="../assets/logo.png"/>docker</td>
+            <td><img class="imgsTwo" src="../assets/logo.png"/>Django</td>
+            <td><img class="imgsTwo" src="../assets/logo.png"/>其他</td>
           </tr>
 
         </table>
       </div>
       <div>
         <div class="terms">
-            <div class="objects" v-for="t in c">{{t}}</div>
+          <div class="objects" v-for="t in c">
+            <div>
+              <span>最新更新时间</span>
+              <span>{{t.time}}</span>
+            </div>
+            <img class="imgThree" src="../assets/logo.png"/>
+            <p class="objectsIterm">{{t.tittle}}</p></div>
         </div>
-        <div class="rightPart">这里是推荐链接</div>
+        <div class="rightPart">
+          <table>
+            <th>推荐链接</th>
+            <tr class="url" v-for="u in urls"><a :href="u.url">{{u.tittle}}</a></tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -83,7 +93,7 @@
 }
 .titles table{
     padding: 22px;
-    width: 50%;
+    width: 85%;
     text-align: center;
     font-size: 25px;
 }
@@ -94,19 +104,41 @@
    width: 26px;
 }
 .terms{
-  width: 65%;
+  width: 80%;
   background: wheat;
   position: relative;
   float: left;
+  margin-bottom: 100px;
 }
 .objects{
-    margin: 25px;
+    margin: 54px;
     border-bottom: 1px solid silver;
 }
 .rightPart{
     position: relative;
     float: left;
     margin-left: 25px;
+}
+.rightPart table{
+    margin-left: 30px;
+}
+.imgThree{
+    width:50px;
+    width: 50px;
+    border: 1px solid #575963;
+    border-radius: 14px;
+}
+.objectsIterm{
+    margin-top: 5px;
+    display: block;
+    position: relative;
+    float: left;
+    width: 74%;
+    background: beige;
+}
+.url{
+    border-bottom: 1px solid rebeccapurple;
+
 }
 </style>
 <script>
@@ -116,7 +148,9 @@ export default{
   data () {
     return {
       msg: '正在开发中',
-      c:['文章','文章','文章','文章','文章','文章','文章','文章',]
+      c:[{'tittle':'文章1fdfkfkjsflkjfjseiorkfjsdjk,lfjsldfjklsdjflksdjflsdjflsdkfsjd','time':'2019-2-2'},{'tittle':'文章2','time':'2019-2-2'},{'tittle':'文章3','time':'2019-2-2'},{'tittle':'文章4','time':'2019-2-2'},{'tittle':'文章5','time':'2019-2-2'},{'tittle':'文章6','time':'2019-2-2'},{'tittle':'文章7','time':'2019-2-2'},{'tittle':'文章8','time':'2019-2-2'}],
+      cc:['dfswreeeeeeeeeeeeeeeeeeerweerwrrrrrrrrrrrrrwetwe','gdg'],
+      urls:[{'tittle':'百度新闻','url':'http://www.django-rest-framework.org'},{'tittle':'百度新闻','url':'www.baidu.com',},{'tittle':'百度新闻','url':'www.baidu.com',}]
     }
   },
     mounted: function(){

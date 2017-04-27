@@ -52,3 +52,8 @@ class Article(util_models.TimeStampedModel):
 
     class Meta:
         verbose_name_plural = '文章'
+
+
+class RecommendUrls(util_models.TimeStampedModel):
+    name = models.CharField(verbose_name='链接中文名', max_length=100, blank=True, null=True)
+    url = models.CharField(verbose_name='链接地址', max_length=200,)
