@@ -6,14 +6,14 @@
       <div class="banner">
         <div class="runningImg">
           <img class="imgStyle" src="../assets/logo.png"/>
-          <img class="imgStyle" src="../assets/python.png"/>
-          <img class="imgStyle" src="../assets/qq.jpg"/>
+          <img class="imgStyle" src="../assets/Python.jpg"/>
+          <img class="imgStyle" src="../assets/django.jpg"/>
           <img class="imgStyle" src="../assets/search.png"/>
           <img class="imgStyle" src="../assets/wx.jpg"/>
           <img class="imgStyle" src="../assets/yinhe.jpg"/>
           <img class="imgStyle" src="../assets/bg.jpg"/>
           <img class="imgStyle" src="../assets/github.jpg"/>
-          <img class="imgStyle" src="../assets/icon.png"/>
+          <img class="imgStyle" src="../assets/linux.jpg"/>
         </div>
       </div>
       <div class="titles">
@@ -27,6 +27,7 @@
           <tr>
             <td><img class="imgsTwo" src="../assets/logo.png"/>docker</td>
             <td><img class="imgsTwo" src="../assets/logo.png"/>Django</td>
+            <td><img class="imgsTwo" src="../assets/logo.png"/>nginx</td>
             <td><img class="imgsTwo" src="../assets/logo.png"/>其他</td>
           </tr>
 
