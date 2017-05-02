@@ -105,6 +105,12 @@ li:first-child{
     float: left;
     margin-top: 41px;
 }
+.hom{
+    display:none;
+    width: 29px;
+    position: relative;
+    top: 32px;
+}
 @media(max-width:670px){
 ul{
     display: none;
@@ -123,6 +129,7 @@ li:first-child{
   visibility:visible;
 }
 .hom{
+    display:block;
     width: 29px;
     position: relative;
     top: 32px;
