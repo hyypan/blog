@@ -10,9 +10,8 @@ export default {
 }
 </script>
 
-<style scope>
+<style>
 html, body{
-  background:red;
   height:100%;
   margin:0;
   padding:0;
@@ -21,16 +20,4 @@ html, body{
 #app {
     height:100%;
 }
-/*
-.navi{
-    width: 100%;
-    height: 10%;
-    //background: beige;
-}
-.footer{
-    width: 100%;
-    height:10%;
-    //background: beige;
-}
-*/
 </style>

@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 
+from django.contrib.auth.models import User
 from django.core.files.storage import FileSystemStorage
 from model_utils import models as util_models
 from django.db import models
@@ -47,13 +48,26 @@ class Article(util_models.TimeStampedModel):
     # artice_type = models.ForeignKey(ArticleType, verbose_name='文章类型')
     icon = models.ImageField(verbose_name='文章相关图片')
     content = models.TextField(verbose_name='文章内容')
-
+    read_times = models.IntegerField(verbose_name='阅读数', default=0)
+    good_click = models.IntegerField(verbose_name='点赞次数', default=0)
     plate = models.ForeignKey(Plate, verbose_name='文章所属板块')
 
     class Meta:
         verbose_name_plural = '文章'
 
 
+class Commends(util_models.TimeStampedModel):
+    user = models.ForeignKey(User, verbose_name='用户')
+    content = models.TextField(verbose_name='用户评论内容')
+    article = models.ForeignKey(Article, verbose_name='所评论的文章')
+
+    class Meta:
+        verbose_name_plural = '文章评论'
+
+
 class RecommendUrls(util_models.TimeStampedModel):
     name = models.CharField(verbose_name='链接中文名', max_length=100, blank=True, null=True)
     url = models.CharField(verbose_name='链接地址', max_length=200,)
+
+    class Meta:
+        verbose_name_plural = '推荐链接'

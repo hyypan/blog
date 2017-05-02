@@ -1,12 +1,13 @@
 <template>
   <header>
-    <span>YaphetS的个人网站</span>
+    <span class="home">YaphetS的个人网站</span>
+    <img class="hom" src="../../assets/home.png"/>
     <ul>
-      <li class="liPre">首页</li>
-      <li class="liPre">最热文章</li>
-      <li class="liPre">最新文章</li>
-      <li class="liPre">其他</li>
-      <li>
+      <li class="liPre"><router-link to='/'>首页</router-link></li>
+      <li class="liPre" @click="goToHotest">最热文章</li>
+      <li class="liPre" @click="goToNewest">最新文章</li>
+      <li class="liPre" @click="goToOthers">其他</li>
+      <li class="lastli">
         <div class="secondLine">
           <span class="inputLeft"></span>
           <input class="search" @click="inputClick" placeholder="搜索"/>
@@ -25,16 +26,20 @@ header{
     float: left;
     background: #ffffff;
     z-index: 20;
-    border-bottom: 1px solid hsla(0, 0%, 76%, 0.3)
+    border-bottom: 1px solid hsla(0, 0%, 76%, 0.3);
+    top: 0;
     }
 ul{
     display: -webkit-inline-box;
     list-style: none;
+    width: 38%;
 }
 ul li{
-    //margin-left: 50px;
     font-size: 18px;
     margin-top: 20px;
+}
+li:first-child{
+  visibility:hidden;
 }
 .inputLeft{
     font-size: 10px;
@@ -94,6 +99,43 @@ ul li{
     text-align: center;
 
 }
+.home{
+    width:163px;
+    position: relative;
+    float: left;
+    margin-top: 41px;
+}
+@media(max-width:670px){
+ul{
+    display: none;
+    list-style: none;
+    width: 17%;
+    background: #d2caca;
+    margin-left: 83px;
+    top: -5px;
+    margin-left: 122px;
+    margin-top: 31px;
+    padding-left: 0;
+    font-size: 10px;
+    border-radius: 13px;
+}
+li:first-child{
+  visibility:visible;
+}
+.hom{
+    width: 29px;
+    position: relative;
+    top: 32px;
+}
+.lastli{
+  visibility:hidden;
+}
+ul li{
+    margin-top: 6px;
+    font-size: 11px;
+}
+
+}
 </style>
 <script>
     export default{
@@ -107,21 +149,33 @@ ul li{
 
         $('.inputReft img').animate({'margin-left':'0px'})
         $('.inputReft').animate({'width':'40px'})
+        }),
+        document.getElementsByClassName('hom')[0].addEventListener('mouseover',function(){
+        $('ul').show()
         })
-
+        document.getElementsByTagName('ul')[0].addEventListener('mouseleave',function(){
+          $(this).hide()
+        })
         },
 
 
         methods:{
         inputClick:function(){
-        //document.getElementsByClassName('inputReft')[0].style.width='71px';
         $('.inputReft img').animate({'margin-left':'30px'})
         $('.inputReft').animate({'width':'71px'})
         },
-        blur:function(){
-        alert(1)
+        goToHotest: function(){
+          router.push({name:'hotest'})
+        },
+        goToNewest: function(){
+          router.push({name:'newest'})
+
+        },
+        goToOthers: function(){
+          router.push({name:'others'})
+
         }
-        }
+        },
 
     }
 </script>
