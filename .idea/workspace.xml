@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e346f31-ad9a-427a-9564-04f3b34cc6b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/components/Hello.vue" afterPath="$PROJECT_DIR$/app/yafish/src/components/Hello.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/main.js" afterPath="$PROJECT_DIR$/app/yafish/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/router/index.js" afterPath="$PROJECT_DIR$/app/yafish/src/router/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,8 +91,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/yafish/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="251">
+              <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -110,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/yafish/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            <state relative-caret-position="225">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#140#161#0" expanded="true" />
@@ -135,7 +133,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hello.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Hello.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Hello.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -254,8 +252,8 @@
         <option value="$PROJECT_DIR$/app/yafish/src/components/Content.vue" />
         <option value="$PROJECT_DIR$/app/yafish/src/components/common/header.vue" />
         <option value="$PROJECT_DIR$/app/yafish/src/router/index.js" />
-        <option value="$PROJECT_DIR$/app/yafish/src/main.js" />
         <option value="$PROJECT_DIR$/app/yafish/src/components/Hello.vue" />
+        <option value="$PROJECT_DIR$/app/yafish/src/main.js" />
       </list>
     </option>
   </component>
@@ -280,8 +278,8 @@
     <handled-path value="$PROJECT_DIR$/app/yafish/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="444" />
-    <option name="y" value="242" />
+    <option name="x" value="472" />
+    <option name="y" value="363" />
     <option name="width" value="1441" />
     <option name="height" value="743" />
   </component>
@@ -848,7 +846,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="444" y="242" width="1441" height="743" extended-state="0" />
+    <frame x="472" y="363" width="1441" height="743" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23445319" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1251,25 +1249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/yafish/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/yafish/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#140#161#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/yafish/src/components/common/header.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -1283,6 +1262,25 @@
         <state relative-caret-position="195">
           <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/yafish/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/yafish/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#140#161#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

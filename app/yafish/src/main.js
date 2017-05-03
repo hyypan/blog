@@ -9,15 +9,16 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 const routes=configrouter.options.routes
 const router = new VueRouter({
-    mode: 'history',
-    routes // short for routes: routes
+  mode:'history',
+  routes // short for routes: routes
 })
-window.router=router;
-
 new Vue({
   el: '#app',
   router,
   template: '<App/>',
   components: { App }
 })
+window.router=router;
+
+
 

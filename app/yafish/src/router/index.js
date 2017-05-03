@@ -11,12 +11,18 @@ export default new VueRouter({
     {
       path: '/',
       name: 'hello',
-      component: require('../components/Hello.vue')
+      // component: require('../components/Hello.vue')
+      component:function (resolve) {
+            require(['../components/Hello.vue'], resolve)
+          }
     },
     {
       path: '/content',
       name: 'content',
-      component: require('../components/Content.vue'),
+      // component: require('../components/Content.vue'),
+      component:function (resolve) {
+            require(['../components/Content.vue'], resolve)
+          }
     },
     {
       path: '/content/Articles',
