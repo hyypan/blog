@@ -16,28 +16,28 @@ export default new VueRouter({
     },
     {
       path: '/content',
-      component: require('../components/Content.vue'),
       name: 'content',
+      component: require('../components/Content.vue'),
     },
     {
       path: '/content/Articles',
-      component: require('../components/Articles.vue'),
       name:'articles',
+      component: require('../components/Articles.vue'),
     },
         {
       path: '/content/Hotest',
+          name:'hotest',
       component: require('../components/Hotest.vue'),
-      name:'hotest',
     },
         {
       path: '/content/Newest',
+          name:'newest',
       component: require('../components/Newest.vue'),
-      name:'newest',
     },
         {
       path: '/content/Others',
+          name:'others',
       component: require('../components/Others.vue'),
-      name:'others',
     },
     {
       path: '*',

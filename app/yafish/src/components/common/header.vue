@@ -1,6 +1,6 @@
 <template>
   <header>
-    <span class="home">YaphetS的个人网站</span>
+    <!--<div><img src="../../assets/yanglogo.png"/> </div>-->
     <img class="hom" src="../../assets/home.png"/>
     <ul>
       <li class="liPre"><router-link to='/'>首页</router-link></li>
@@ -26,13 +26,14 @@ header{
     float: left;
     background: #ffffff;
     z-index: 20;
-    border-bottom: 1px solid hsla(0, 0%, 76%, 0.3);
+    border-bottom: 1px solid #ece0ce;
     top: 0;
     }
 ul{
     display: -webkit-inline-box;
     list-style: none;
     width: 38%;
+    color: #FF9800;
 }
 ul li{
     font-size: 18px;
@@ -96,7 +97,7 @@ li:first-child{
 .liPre{
     padding-top: 7px;
     width: 106px;
-    text-align: center;
+    text-align:center;
 
 }
 .home{
@@ -111,19 +112,27 @@ li:first-child{
     position: relative;
     top: 32px;
 }
+@media(min-width:670px){
+ul{
+    display: -webkit-inline-box;
+    list-style: none;
+    width: 38%;
+    color: #FF9800;
+}
+}
 @media(max-width:670px){
 ul{
     display: none;
     list-style: none;
-    width: 17%;
+    width: 12%;
+    padding:6px;
     background: #d2caca;
     margin-left: 83px;
     top: -5px;
-    margin-left: 122px;
+    margin-left: 170px;
     margin-top: 31px;
-    padding-left: 0;
     font-size: 10px;
-    border-radius: 13px;
+    height: 105px;
 }
 li:first-child{
   visibility:visible;
@@ -141,7 +150,13 @@ ul li{
     margin-top: 6px;
     font-size: 11px;
 }
+.liPre{
+    padding-top: 7px;
+    text-align:center;
+    width: 67px;
 
+
+}
 }
 </style>
 <script>
@@ -152,6 +167,12 @@ ul li{
             }
         },
         mounted:function(){
+        document.getElementsByTagName('body')[0].addEventListener('mouseover',function(){
+        if($(this).clientWidth>670){
+        alert(1)
+            $('ul').show()
+        }
+        })
         document.getElementsByClassName('search')[0].addEventListener('focusout',function(){
 
         $('.inputReft img').animate({'margin-left':'0px'})
@@ -161,7 +182,12 @@ ul li{
         $('ul').show()
         })
         document.getElementsByTagName('ul')[0].addEventListener('mouseleave',function(){
-          $(this).hide()
+
+          if(document.getElementsByTagName('body')[0].clientWidth<670){
+              $(this).hide()
+            }else{
+              $(this).show()
+            }
         })
         },
 

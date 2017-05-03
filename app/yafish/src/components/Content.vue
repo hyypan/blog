@@ -79,6 +79,7 @@
     width: 75%;
     margin: 0 auto;
     position:relative;
+    top: 53px;
 }
 .banner{
     width: 100%;
