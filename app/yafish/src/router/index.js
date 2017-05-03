@@ -6,7 +6,6 @@ import VueRouter from 'vue-router'
 Vue.use(Router)
 
 export default new VueRouter({
-  mode: 'history',
   hashbang: false,
   routes: [
     {
