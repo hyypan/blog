@@ -167,14 +167,20 @@
 @media(max-width:670px){
 .imgStyle{
   display:none;
-  height:100px;
+  height:190px;
   width:100%;
 }
 .imgsTwo{
    width: 30px;
    font-size: 10px;
 }
-
+.contentCenter{
+    background: rebeccapurple;
+    width: 100%;
+    margin: 0 auto;
+    position:relative;
+    top: 53px;
+}
 }
 
 </style>
