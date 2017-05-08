@@ -176,7 +176,7 @@
 }
 .contentCenter{
     background: rebeccapurple;
-    width: 100%;
+    width: 96%;
     margin: 0 auto;
     position:relative;
     top: 53px;
