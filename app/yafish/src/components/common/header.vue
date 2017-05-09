@@ -15,7 +15,7 @@
           </ul>
         </li>
         <li>
-          <ul class="threeUl">
+          <ul class="">
             <li><img class="imgsTw" src="../../assets/python.png"/><span>python</span></li>
             <li><img class="imgsTw" src="../../assets/logo.png"/><span>vue</span></li>
             <li><img class="imgsTw" src="../../assets/linux.jpg"/><span>linux</span></li>
@@ -23,7 +23,7 @@
           </ul>
         </li>
         <li>
-          <ul class="fourUl">
+          <ul class="">
             <li><img class="imgsTw" src="../../assets/docker.jpg"/><span>docker</span></li>
             <li><img class="imgsTw" src="../../assets/django.jpg"/><span>django</span></li>
             <li><img class="imgsTw" src="../../assets/nginx.jpg"/><span>nginx</span></li>
@@ -65,6 +65,12 @@
     list-style:none;
     padding: 0;
     height: 69px;
+    display: -webkit-box;
+    margin-left: -32px;
+    margin-top: 0;
+}
+.zzul li{
+    list-style:none;
 }
 .threeUl{
    position: relative;
