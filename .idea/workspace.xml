@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e346f31-ad9a-427a-9564-04f3b34cc6b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/components/Content.vue" afterPath="$PROJECT_DIR$/app/yafish/src/components/Content.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/components/common/header.vue" afterPath="$PROJECT_DIR$/app/yafish/src/components/common/header.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,10 +78,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Content.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Content.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Content.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="-817">
               <caret line="209" column="17" lean-forward="false" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
               <folding />
             </state>
@@ -161,11 +160,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/yafish/src/components/common/header.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1316">
-              <caret line="254" column="14" lean-forward="false" selection-start-line="254" selection-start-column="14" selection-end-line="254" selection-end-column="14" />
+            <state relative-caret-position="336">
+              <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -250,8 +249,8 @@
         <option value="$PROJECT_DIR$/app/yafish/src/components/Hello.vue" />
         <option value="$PROJECT_DIR$/app/yafish/src/main.js" />
         <option value="$PROJECT_DIR$/app/yafish/src/router/index.js" />
-        <option value="$PROJECT_DIR$/app/yafish/src/components/common/header.vue" />
         <option value="$PROJECT_DIR$/app/yafish/src/components/Content.vue" />
+        <option value="$PROJECT_DIR$/app/yafish/src/components/common/header.vue" />
       </list>
     </option>
   </component>
@@ -1205,18 +1204,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/yafish/src/components/common/header.vue">
+    <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Content.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1316">
-          <caret line="254" column="14" lean-forward="false" selection-start-line="254" selection-start-column="14" selection-end-line="254" selection-end-column="14" />
+        <state relative-caret-position="-817">
+          <caret line="209" column="17" lean-forward="false" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Content.vue">
+    <entry file="file://$PROJECT_DIR$/app/yafish/src/components/common/header.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="209" column="17" lean-forward="false" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
+        <state relative-caret-position="336">
+          <caret line="71" column="20" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
           <folding />
         </state>
       </provider>

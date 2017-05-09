@@ -47,13 +47,13 @@
 .threeUl{
    position: relative;
     top: -68px;
-    /* width: 12px; */
     left: 70px;
+    list-style:none;
 }
 .fourUl{
     position: relative;
-    /* float: left; */
     top: -136px;
+    list-style:none;
     left: 181px;
 }
 li{
@@ -69,6 +69,7 @@ li{
     //background: #7b7979;
     background:#7b7979;
     position: relative;
+    list-style:none;
     top: -44px;
     font-size: 10px;
     padding: 22px;
@@ -235,7 +236,8 @@ header{
     top: -31px;
     font-size: 10px;
     padding: 22px;
-    height: 49px;
+    height: 59px;
+    list-style:none;
 }
 .hom{
     display: -webkit-box;
@@ -273,44 +275,7 @@ header{
     top: -23px;
 }
 }
-/*@media(max-width:670px){
-ul{
-    display: none;
-    list-style: none;
-    width: 12%;
-    padding:6px;
-    background: #d2caca;
-    margin-left: 83px;
-    top: -5px;
-    margin-left: 170px;
-    margin-top: 31px;
-    font-size: 10px;
-    height: 105px;
-}
-li:first-child{
-  visibility:visible;
-}
-.hom{
-    display:block;
-    width: 29px;
-    position: relative;
-    top: 32px;
-}
-.lastli{
-  visibility:hidden;
-}
-ul li{
-    margin-top: 6px;
-    font-size: 11px;
-}
-.liPre{
-    padding-top: 7px;
-    text-align:center;
-    width: 67px;
 
-
-}
-}*/
 </style>
 <script>
     export default{
@@ -340,14 +305,14 @@ ul li{
          document.getElementsByClassName('contentCenter')[0].style.top='-40px'
         }
         })
-        document.getElementsByTagName('ul')[0].addEventListener('mouseleave',function(){
+        //document.getElementsByTagName('ul')[0].addEventListener('mouseleave',function(){
 
-          if(document.getElementsByTagName('body')[0].clientWidth<670){
-              $(this).hide()
-            }else{
-              $(this).show()
-            }
-        })
+          //if(document.getElementsByTagName('body')[0].clientWidth<670){
+             // $(this).hide()
+            //}else{
+            //  $(this).show()
+            //}
+        //})
         },
 
 
