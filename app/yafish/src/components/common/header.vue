@@ -7,7 +7,20 @@
       <li class="" @click="goToHotest">最热文章</li>
       <li class="" @click="goToNewest">最新文章</li>
       <li class="" @click="goToOthers">其他</li>
+      <ul class="threeUl">
+      <li><img class="imgsTw" src="../../assets/python.png"/><span>python</span></li>
+      <li><img class="imgsTw" src="../../assets/logo.png"/><span>vue</span></li>
+      <li><img class="imgsTw" src="../../assets/linux.jpg"/><span>linux</span></li>
+      <li><img class="imgsTw" src="../../assets/ansible.jpg"/><span>ansible</span></li>
     </ul>
+      <ul class="fourUl">
+      <li><img class="imgsTw" src="../../assets/docker.jpg"/><span>docker</span></li>
+      <li><img class="imgsTw" src="../../assets/django.jpg"/><span>django</span></li>
+      <li><img class="imgsTw" src="../../assets/nginx.jpg"/><span>nginx</span></li>
+    </ul>
+    </ul>
+
+
     <ul class="firstUl">
       <li class="liPre"><router-link to='/'>首页</router-link></li>
       <li class="liPre" @click="goToHotest">最热文章</li>
@@ -31,9 +44,30 @@
   </header>
 </template>
 <style scoped>
+.threeUl{
+   position: relative;
+    top: -68px;
+    /* width: 12px; */
+    left: 70px;
+}
+.fourUl{
+    position: relative;
+    /* float: left; */
+    top: -136px;
+    left: 181px;
+}
+li{
+    margin: 5px;
+}
+
+.imgsTw{
+    width: 10px;
+    height: 10px;
+}
 .zeroUl{
     display:none;
-    background: #7b7979;
+    //background: #7b7979;
+    background:#7b7979;
     position: relative;
     top: -44px;
     font-size: 10px;
@@ -196,11 +230,12 @@ header{
 @media(max-width:670px){
 .zeroUl{
     display:none;
-    background: #7b7979;
+    //background: #7b7979;
     position: relative;
     top: -31px;
     font-size: 10px;
     padding: 22px;
+    height: 49px;
 }
 .hom{
     display: -webkit-box;
@@ -217,11 +252,15 @@ header{
 }
 header{
     position: fixed;
-    height: 50px;
+    height: 55px;
     width: 100%;
     float: left;
-    background: #7b7979;
+    //background-image:url('https://onevcat.com//assets/images/background-cover.jpg');
+    //background-repeat: no-repeat;
+    //background-position: center;
+   // background-size: cover;
     z-index: 20;
+    background:#7b7979;
     border-bottom: 1px solid #7b7979;
     top: 0;
     }

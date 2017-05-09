@@ -26,7 +26,6 @@
             <li><img class="imgsTwo" src="../assets/docker.jpg"/><span>docker</span></li>
             <li><img class="imgsTwo" src="../assets/django.jpg"/><span>django</span></li>
             <li><img class="imgsTwo" src="../assets/nginx.jpg"/><span>nginx</span></li>
-            <!--<li class="imgsTwo">more>></li>-->
           </ul>
           <!--<tr class="secondtr">-->
             <!--<td><img class="imgsTwo" src="../assets/docker.jpg"/></td>-->
@@ -206,6 +205,12 @@
     margin: 0 auto;
     position:relative;
     top: -40px;
+}
+.titles{
+    display:none;
+    background: white;
+    width: 100%;
+    position:relative;
 }
 }
 
