@@ -19,14 +19,14 @@
       <div class="titles">
         <!--<table cellspacing="60" cellpadding="1">-->
           <ul class="firsttr">
-            <li><img class="imgsTwo" src="../assets/python.png"/></li>
-            <li><img class="imgsTwo" src="../assets/logo.png"/></li>
-            <li><img class="imgsTwo" src="../assets/linux.jpg"/></li>
-            <li><img class="imgsTwo" src="../assets/ansible.jpg"/></li>
-            <li><img class="imgsTwo" src="../assets/docker.jpg"/></li>
-            <li><img class="imgsTwo" src="../assets/django.jpg"/></li>
-            <li><img class="imgsTwo" src="../assets/nginx.jpg"/></li>
-            <li class="imgsTwo">更多>></li>
+            <li><img class="imgsTwo" src="../assets/python.png"/><span>python</span></li>
+            <li><img class="imgsTwo" src="../assets/logo.png"/><span>vue</span></li>
+            <li><img class="imgsTwo" src="../assets/linux.jpg"/><span>linux</span></li>
+            <li><img class="imgsTwo" src="../assets/ansible.jpg"/><span>ansible</span></li>
+            <li><img class="imgsTwo" src="../assets/docker.jpg"/><span>docker</span></li>
+            <li><img class="imgsTwo" src="../assets/django.jpg"/><span>django</span></li>
+            <li><img class="imgsTwo" src="../assets/nginx.jpg"/><span>nginx</span></li>
+            <!--<li class="imgsTwo">more>></li>-->
           </ul>
           <!--<tr class="secondtr">-->
             <!--<td><img class="imgsTwo" src="../assets/docker.jpg"/></td>-->
@@ -40,21 +40,31 @@
       <div class="articles">
         <div class="terms">
           <div class="objects" v-for="t in c">
-            <div class="timeWaring">
-              <span>最新更新时间</span>
-              <span>{{t.time}}</span>
-            </div>
             <!--<img class="imgThree" src="../assets/logo.png"/>-->
-            <router-link class="objectsIterm" to="/content/articles">{{t.tittle}}</router-link>
+            <div>
+              <router-link class="objectsIterm" to="/content/articles">{{t.tittle}}</router-link>
+            </div>
+            <div class="detail">
+              <span>作者</span>
+              <span>最近更新时间:</span>
+              <span>{{t.time}}</span>
+              <span>评论2条</span>
+              <span>点赞次数</span>
+            </div>
+            <div>文章内容........</div>
+            <!--<div class="timeWaring">-->
+              <!--<span>最新更新时间</span>-->
+              <!--<span>{{t.time}}</span>-->
+            <!--</div>-->
           </div>
         </div>
         <div class="more" @click="getMore">加载更多...</div>
-        <div class="rightPart">
-          <table>
-            <th>推荐链接</th>
-            <tr class="url" v-for="u in urls"><a :href="u.url">{{u.tittle}}</a></tr>
-          </table>
-        </div>
+        <!--<div class="rightPart">-->
+          <!--<table>-->
+            <!--<th>推荐链接</th>-->
+            <!--<tr class="url" v-for="u in urls"><a :href="u.url">{{u.tittle}}</a></tr>-->
+          <!--</table>-->
+        <!--</div>-->
       </div>
     </div>
   </div>
@@ -67,6 +77,10 @@
     }
 </style>
 <style scoped>
+.detail{
+    font-size: 12px;
+    padding: 10px;
+}
 .content{
         color:#211e1e;
         position: relative;
@@ -100,7 +114,7 @@
     display: -webkit-inline-box;
     list-style: none;
     padding: 0;
-    width: 100%;
+    width: 95%;
 
 }
 .titles li{
@@ -109,7 +123,19 @@
 
 }
 .imgsTwo{
-   width: 44px;
+    width: 50px;
+    height: 44px;
+    border: 1px solid #FF9800;
+    border-radius: 12px;
+}
+.firsttr li span{
+    position: relative;
+    top: 11px;
+    color: #FF9800;
+    font-size: 12px;
+    left: -46px;
+    text-align: center;
+
 }
 .terms{
   width: 100%;
@@ -122,6 +148,7 @@
     margin: 10px;
     height: 76px;
     border-bottom: 1px solid silver;
+    text-align: center;
 }
 .rightPart{
     position: relative;
@@ -140,7 +167,6 @@
     margin-top: 5px;
     display: block;
     position: relative;
-    float: left;
     width: 74%;
     background: beige;
     margin-left: 16%;
@@ -150,7 +176,7 @@
 
 }
 .more{
-    width: 80%;
+    width: 100%;
     height: 18px;
     position: relative;
     float: left;
@@ -176,10 +202,10 @@
 }
 .contentCenter{
     background: rebeccapurple;
-    width: 96%;
+    width: 100%;
     margin: 0 auto;
     position:relative;
-    top: 53px;
+    top: -40px;
 }
 }
 
