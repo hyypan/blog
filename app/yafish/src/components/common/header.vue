@@ -1,24 +1,41 @@
 <template>
   <header>
-    <img class="hom" src="../../assets/home.png"/>
-    <img class="potr" src="../../assets/pis.jpg"/>
-    <ul class="zeroUl">
-      <li class=""><router-link to='/'>首页</router-link></li>
-      <li class="" @click="goToHotest">最热文章</li>
-      <li class="" @click="goToNewest">最新文章</li>
-      <li class="" @click="goToOthers">其他</li>
-      <ul class="threeUl">
-      <li><img class="imgsTw" src="../../assets/python.png"/><span>python</span></li>
-      <li><img class="imgsTw" src="../../assets/logo.png"/><span>vue</span></li>
-      <li><img class="imgsTw" src="../../assets/linux.jpg"/><span>linux</span></li>
-      <li><img class="imgsTw" src="../../assets/ansible.jpg"/><span>ansible</span></li>
-    </ul>
-      <ul class="fourUl">
-      <li><img class="imgsTw" src="../../assets/docker.jpg"/><span>docker</span></li>
-      <li><img class="imgsTw" src="../../assets/django.jpg"/><span>django</span></li>
-      <li><img class="imgsTw" src="../../assets/nginx.jpg"/><span>nginx</span></li>
-    </ul>
-    </ul>
+    <div class="mid">
+      <img class="hom" src="../../assets/home.png"/>
+      <img class="potr" src="../../assets/pis.jpg"/>
+    </div>
+    <div class="zeroUl" >
+      <ul class="zzul">
+        <li>
+          <ul class="">
+            <li class=""><router-link to='/'>首页</router-link></li>
+            <li class="" @click="goToHotest">最热文章</li>
+            <li class="" @click="goToNewest">最新文章</li>
+            <li class="" @click="goToOthers">其他</li>
+          </ul>
+        </li>
+        <li>
+          <ul class="threeUl">
+            <li><img class="imgsTw" src="../../assets/python.png"/><span>python</span></li>
+            <li><img class="imgsTw" src="../../assets/logo.png"/><span>vue</span></li>
+            <li><img class="imgsTw" src="../../assets/linux.jpg"/><span>linux</span></li>
+             <li><img class="imgsTw" src="../../assets/ansible.jpg"/><span>ansible</span></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="fourUl">
+            <li><img class="imgsTw" src="../../assets/docker.jpg"/><span>docker</span></li>
+            <li><img class="imgsTw" src="../../assets/django.jpg"/><span>django</span></li>
+            <li><img class="imgsTw" src="../../assets/nginx.jpg"/><span>nginx</span></li>
+          </ul>
+        </li>
+
+
+
+      </ul>
+    </div>
+
+
 
 
     <ul class="firstUl">
@@ -44,10 +61,15 @@
   </header>
 </template>
 <style scoped>
+.zzul{
+    list-style:none;
+    padding: 0;
+    height: 69px;
+}
 .threeUl{
    position: relative;
     top: -68px;
-    left: 70px;
+    left: 89px;
     list-style:none;
 }
 .fourUl{
@@ -73,6 +95,11 @@ li{
     top: -44px;
     font-size: 10px;
     padding: 22px;
+}
+.mid{
+    width: 80%;
+    margin: 0 auto;
+    display:none;
 }
 .potr{
     display:none;
@@ -229,14 +256,19 @@ header{
     left: 26px;
 }
 @media(max-width:670px){
+.mid{
+    display:block;
+    width: 80%;
+    margin: 0 auto;
+}
 .zeroUl{
     display:none;
     //background: #7b7979;
     position: relative;
-    top: -31px;
+    top: -23px;
     font-size: 10px;
     padding: 22px;
-    height: 59px;
+    height: 61px;
     list-style:none;
 }
 .hom{
@@ -244,7 +276,7 @@ header{
     width: 29px;
     position: relative;
     top: 11px;
-    left: 26px;
+    left: 0;
 }
 .firstUl{
     display: none;
@@ -271,8 +303,8 @@ header{
     width: 40px;
     position: relative;
     border-radius: 20px;
-    left: 140px;
     top: -23px;
+    left: 44%;
 }
 }
 
