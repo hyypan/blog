@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e346f31-ad9a-427a-9564-04f3b34cc6b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/components/Hello.vue" afterPath="$PROJECT_DIR$/app/yafish/src/components/Hello.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/components/Content.vue" afterPath="$PROJECT_DIR$/app/yafish/src/components/Content.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,7 +78,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Hello.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Hello.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Hello.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -88,14 +88,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Content.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Content.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Content.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="238" column="6" lean-forward="false" selection-start-line="238" selection-start-column="6" selection-end-line="238" selection-end-column="6" />
+            <state relative-caret-position="203">
+              <caret line="156" column="16" lean-forward="false" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#!!top" expanded="false" />
-                <element signature="n#style#1;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -253,8 +252,8 @@
         <option value="$PROJECT_DIR$/app/yafish/src/router/index.js" />
         <option value="$PROJECT_DIR$/app/yafish/src/components/common/header.vue" />
         <option value="$PROJECT_DIR$/app/yafish/build/webpack.base.conf.js" />
-        <option value="$PROJECT_DIR$/app/yafish/src/components/Content.vue" />
         <option value="$PROJECT_DIR$/app/yafish/src/components/Hello.vue" />
+        <option value="$PROJECT_DIR$/app/yafish/src/components/Content.vue" />
       </list>
     </option>
   </component>
@@ -1168,22 +1167,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Content.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="238" column="6" lean-forward="false" selection-start-line="238" selection-start-column="6" selection-end-line="238" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#!!top" expanded="false" />
-            <element signature="n#style#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Hello.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Content.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="156" column="16" lean-forward="false" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

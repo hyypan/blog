@@ -69,7 +69,6 @@
         margin-top: 90px;
 }
 .contentCenter{
-    background: rebeccapurple;
     width: 75%;
     margin: 0 auto;
     position:relative;
@@ -77,7 +76,6 @@
 }
 .banner{
     width: 100%;
-    background: wheat;
     height: 58%;
 }
 .imgStyle{
@@ -119,16 +117,16 @@
 }
 .terms{
   width: 100%;
-  background: wheat;
   position: relative;
-  float: left;
-  margin-bottom: 100px;
+  margin-bottom: 26px;
 }
 .objects{
     margin: 10px;
     height: 76px;
     border-bottom: 1px solid silver;
     text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 .rightPart{
     position: relative;
@@ -157,14 +155,10 @@
 }
 .more{
     width: 100%;
-    height: 18px;
     position: relative;
-    float: left;
-    margin-top: -92px;
     text-align: center;
 }
 .articles{
-    background:black;
 }
 .timeWaring{
     font-size: 12px;
@@ -181,7 +175,6 @@
    font-size: 10px;
 }
 .contentCenter{
-    background: rebeccapurple;
     width: 100%;
     margin: 0 auto;
     position:relative;
@@ -246,7 +239,7 @@ export default{
       if (allItems<=this.c.length){
             for(var i=0;i<10;i++){
               $('.terms').append('<div class="append1"><div class="tittleStyle"><a href="/content/articles">'+this.c[i+7].tittle+'</a></div><div class="allDetail"><span>'+'作者:'+this.c[i+7].author+'</span><span>'+'最近更新时间:'+this.c[i+7].time+'</span><span>'+'评论:'+this.c[i+7].comments+'</span><span>'+'点赞次数:'+this.c[i+7].exTimes+'</span></div><div class="contentArticle">'+this.c[i+7].content+'</div></div>')
-              $('.append1').css({'margin': '10px','border-bottom': '1px solid silver','height': '76px'})
+              $('.append1').css({'margin': '10px','border-bottom': '1px solid silver','height': '76px','padding-bottom': '10px','padding-top':'10px'})
               $('.tittleStyle').css({'text-align': 'center'})
               $('.allDetail').css({'text-align':'center','font-size': '12px','padding': '10px'})
               $('.contentArticle').css({'text-align':'center'})
