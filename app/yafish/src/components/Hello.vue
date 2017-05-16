@@ -11,7 +11,7 @@
           <li><img src="../assets/qq.jpg"/> </li>
           <li><a href="https://github.com/hyypan"><img src="../assets/github.jpg"/> </a></li>
         </ul>
-        <router-link to="/content" tag="div"><p class="enter">点击进入</p></router-link>
+        <router-link to="/content" tag="div"><p class="enter2">点击进入</p></router-link>
       </div>
     </div>
   </div>
@@ -66,7 +66,7 @@ export default {
     border-bottom: 1px solid sienna;
 }
 .face p{
-    //text-align: center;
+    text-align: center;
 }
 
 .face ul{
@@ -121,15 +121,15 @@ ul li{
     height: 422px;
 }
 .face p{
-    //font-size: 10px;
+    font-size: 10px;
 }
 .enter{
-    //width: 119px;
-    //height: 18px;
-    //font-size: 15px;import
-    //padding-top: 3px;
-    //letter-spacing: 11px;
-   // padding-left: 11px;
+    width: 119px;
+    height: 18px;
+    font-size: 15px;import
+    padding-top: 3px;
+    letter-spacing: 11px;
+   padding-left: 11px;
 }
 }
 </style>
