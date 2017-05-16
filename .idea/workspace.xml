@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e346f31-ad9a-427a-9564-04f3b34cc6b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/components/Hello.vue" afterPath="$PROJECT_DIR$/app/yafish/src/components/Hello.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,8 +81,8 @@
       <file leaf-file-name="Hello.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Hello.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <state relative-caret-position="189">
+              <caret line="68" column="6" lean-forward="false" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -280,8 +279,8 @@
     <handled-path value="$PROJECT_DIR$/app/yafish/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="319" />
-    <option name="y" value="190" />
+    <option name="x" value="355" />
+    <option name="y" value="288" />
     <option name="width" value="1441" />
     <option name="height" value="743" />
   </component>
@@ -788,7 +787,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="319" y="190" width="1441" height="743" extended-state="0" />
+    <frame x="355" y="288" width="1441" height="743" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24374554" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1182,8 +1181,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/yafish/src/components/Hello.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state relative-caret-position="189">
+          <caret line="68" column="6" lean-forward="false" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
           <folding />
         </state>
       </provider>

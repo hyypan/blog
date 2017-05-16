@@ -4,7 +4,7 @@
       <div class="face">
         <img class="img" src="../assets/pis.jpg"/>
         <h1>YaphetS</h1>
-        <p>如果这里面的文章你都没法读懂，说明你比我菜，不行进去试试？</p>
+        <p>如果这里面的文章你都没法读懂，说明你比我菜，进去试试？</p>
         <p>看不懂请联系我:</p>
         <ul>
           <li><img class="first-img" src="../assets/wx.jpg"/> </li>
@@ -66,7 +66,7 @@ export default {
     border-bottom: 1px solid sienna;
 }
 .face p{
-    text-align: center;
+    //text-align: center;
 }
 
 .face ul{
@@ -121,15 +121,15 @@ ul li{
     height: 422px;
 }
 .face p{
-    font-size: 10px;
+    //font-size: 10px;
 }
 .enter{
-    width: 119px;
-    height: 18px;
-    font-size: 15px;import
-    padding-top: 3px;
-    letter-spacing: 11px;
-    padding-left: 11px;
+    //width: 119px;
+    //height: 18px;
+    //font-size: 15px;import
+    //padding-top: 3px;
+    //letter-spacing: 11px;
+   // padding-left: 11px;
 }
 }
 </style>
