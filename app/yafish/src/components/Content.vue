@@ -27,43 +27,24 @@
             <li><img class="imgsTwo" src="../assets/django.jpg"/><span>django</span></li>
             <li><img class="imgsTwo" src="../assets/nginx.jpg"/><span>nginx</span></li>
           </ul>
-          <!--<tr class="secondtr">-->
-            <!--<td><img class="imgsTwo" src="../assets/docker.jpg"/></td>-->
-            <!--<td><img class="imgsTwo" src="../assets/django.jpg"/></td>-->
-            <!--<td><img class="imgsTwo" src="../assets/nginx.jpg"/></td>-->
-            <!--<td>更多>></td>-->
-          <!--</tr>-->
-
-        <!--</table>-->
       </div>
       <div class="articles">
         <div class="terms">
           <div class="objects" v-for="t in c">
-            <!--<img class="imgThree" src="../assets/logo.png"/>-->
             <div>
               <router-link class="objectsIterm" to="/content/articles">{{t.tittle}}</router-link>
             </div>
             <div class="detail">
-              <span>作者</span>
-              <span>最近更新时间:</span>
+              <span>作者:{{t.author}}</span>
+              <span>最近更新时间:{{t.time}}</span>
               <span>{{t.time}}</span>
-              <span>评论2条</span>
-              <span>点赞次数</span>
+              <span>评论{{t.comments}}条</span>
+              <span>点赞次数{{t.exTimes}}</span>
             </div>
-            <div>文章内容........</div>
-            <!--<div class="timeWaring">-->
-              <!--<span>最新更新时间</span>-->
-              <!--<span>{{t.time}}</span>-->
-            <!--</div>-->
+            <div>{{t.content}}</div>
           </div>
         </div>
         <div class="more" @click="getMore">加载更多...</div>
-        <!--<div class="rightPart">-->
-          <!--<table>-->
-            <!--<th>推荐链接</th>-->
-            <!--<tr class="url" v-for="u in urls"><a :href="u.url">{{u.tittle}}</a></tr>-->
-          <!--</table>-->
-        <!--</div>-->
       </div>
     </div>
   </div>
@@ -222,14 +203,14 @@ export default{
   data () {
     return {
       msg: '正在开发中',
-      c:[{'tittle':'文章1','time':'2019-2-2','src':'../assets/logo.png'},
-      {'tittle':'文章2','time':'2019-2-2','src':'../assets/logo.png'},
-      {'tittle':'文章3','time':'2019-2-2','src':'../assets/logo.png'},
-      {'tittle':'文章4','time':'2019-2-2','src':'../assets/logo.png'},
-      {'tittle':'文章5','time':'2019-2-2','src':'../assets/logo.png'},
-      {'tittle':'文章6','time':'2019-2-2','src':'../assets/logo.png'},
-      {'tittle':'文章7','time':'2019-2-2','src':'../assets/logo.png'},
-      {'tittle':'文章8','time':'2019-2-2','src':'../assets/logo.png'}],
+      c:[{'tittle':'文章11','time':'2019-2-2','content':'文章内容', 'exTimes':10,'comments':2, 'author': 'yafish'},
+      {'tittle':'文章12','time':'2019-2-2','content':'文章内容', 'exTimes':10,'comments':2, 'author': 'yafish'},
+      {'tittle':'文章13','time':'2019-2-2','content':'文章内容', 'exTimes':10,'comments':2, 'author': 'yafish'},
+      {'tittle':'文章14','time':'2019-2-2','content':'文章内容', 'exTimes':10,'comments':2, 'author': 'yafish'},
+      {'tittle':'文章15','time':'2019-2-2','content':'文章内容', 'exTimes':10,'comments':2, 'author': 'yafish'},
+      {'tittle':'文章16','time':'2019-2-2','content':'文章内容', 'exTimes':10,'comments':2, 'author': 'yafish'},
+      {'tittle':'文章17','time':'2019-2-2','content':'文章内容', 'exTimes':10,'comments':2, 'author': 'yafish'},
+      {'tittle':'文章18','time':'2019-2-2','content':'文章内容', 'exTimes':10,'comments':2, 'author': 'yafish'}],
       cc:['dfswreeeeeeeeeeeeeeeeeeerweerwrrrrrrrrrrrrrwetwe','gdg'],
       urls:[
       {'tittle':'百度新闻','url':'http://www.django-rest-framework.org'},
@@ -247,14 +228,11 @@ export default{
         console.log(randomNum)
         $(imgs[randomNum]).animate({'marginTop':'0px'},function(){
         $(this).show().siblings().hide()
-          //$(this).animate({'marginTop':'-300px'})
 
         })
 
 
         },5000)
-        //setInterObj
-
     },
     components:{
     FooterComponents,HeaderComponents,
@@ -267,11 +245,11 @@ export default{
       let that=this;
       if (allItems<=this.c.length){
             for(var i=0;i<10;i++){
-              $('.terms').append('<div class="append1"><div class="timeWarning1"><span>更新时间</span><span>'+this.c[i+allItems-1].time+'</span></div><div class="router-link" to="/content/articles">'+this.c[i+allItems-1].tittle+'</div></div>')
+              $('.terms').append('<div class="append1"><div class="tittleStyle"><a href="/content/articles">'+this.c[i+7].tittle+'</a></div><div class="allDetail"><span>'+'作者:'+this.c[i+7].author+'</span><span>'+'最近更新时间:'+this.c[i+7].time+'</span><span>'+'评论:'+this.c[i+7].comments+'</span><span>'+'点赞次数:'+this.c[i+7].exTimes+'</span></div><div class="contentArticle">'+this.c[i+7].content+'</div></div>')
               $('.append1').css({'margin': '10px','border-bottom': '1px solid silver','height': '76px'})
-              $('.timeWarning1').css({'font-size': '12px','padding': '10px'})
-              $('.imgthree1').css({'width':'50px','border': '1px solid #575963','border-radius': '14px','height': '50px'})
-              $('.router-link').css({'margin-top': '5px','display': 'block','position': 'relative','float': 'left','width': '74%','background': 'beige','margin-left': '16%'})
+              $('.tittleStyle').css({'text-align': 'center'})
+              $('.allDetail').css({'text-align':'center','font-size': '12px','padding': '10px'})
+              $('.contentArticle').css({'text-align':'center'})
       }
       }else{
       alert(0)

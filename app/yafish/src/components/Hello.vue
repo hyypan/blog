@@ -31,12 +31,11 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 .content{
     height:100%;
-    background-image:url('https://onevcat.com//assets/images/background-cover.jpg');
+    background-image:url('../assets/bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
