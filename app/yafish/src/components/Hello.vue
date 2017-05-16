@@ -4,8 +4,8 @@
       <div class="face">
         <img class="img" src="../assets/pis.jpg"/>
         <h1>YaphetS</h1>
-        <p>嗨！这里收集了关于linux,Python，vue,webpack相关的东西，停留2分钟，受益一生</p>
-        <p>联系我:</p>
+        <p>如果这里面的文章你都没法读懂，说明你比我菜，不行进去试试？</p>
+        <p>看不懂请联系我:</p>
         <ul>
           <li><img class="first-img" src="../assets/wx.jpg"/> </li>
           <li><img src="../assets/qq.jpg"/> </li>
@@ -45,6 +45,7 @@ export default {
     margin: 0 auto;
     position: relative;
     top: 15%;
+    color: white;
 }
 .face{
     width: 394px;
