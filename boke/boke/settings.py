@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'redactor',
     # 第三方app
     'users',
     'yafish',
@@ -132,3 +133,7 @@ MEDIA_ROOT = BASE_DIR + '/yafish'
 BASE_URL = '/banner/'
 MEDIA_URL = '/media/'
 print('MEDIA_ROOT', MEDIA_ROOT)
+# redactor settings
+REDACTOR_OPTIONS = {'lang': 'zh_cn'}
+REDACTOR_UPLOAD = 'uploads/'
+REDACTOR_UPLOAD_HANDLER = 'redactor.handlers.DateDirectoryUploader'

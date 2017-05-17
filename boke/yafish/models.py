@@ -35,18 +35,29 @@ class Banner(util_models.TimeStampedModel):
 
 
 class Plate(util_models.TimeStampedModel):
-    name = models.CharField(verbose_name='板块名称', max_length=50)
+    name = models.CharField(verbose_name='板块名称', choices=
+                            (('python', 'python'),
+                             ('vue', 'vue'),
+                             ('linux', 'linux'),
+                             ('docker', 'docker'),
+                             ('ansible', 'ansible'),
+                             ('nginx', 'nginx'),
+                             ('others', 'others'))
+                            , max_length=50)
     sum_aticle = models.IntegerField(verbose_name='该板块文章数量', default=0)
 
     class Meta:
         verbose_name_plural = '区块'
 
+    def __str__(self):
+        return self.name
 
 class Article(util_models.TimeStampedModel):
     title = models.CharField(verbose_name='文章标题', max_length=200, help_text='字数不超过200字')
     second_title = models.CharField(verbose_name='文章副标题', max_length=200, blank=True, null=True, help_text='字数200字以下')
     author = models.CharField(verbose_name='作者', max_length=50, help_text='中英文都可以')
-    icon = models.ImageField(verbose_name='文章相关图片', blank=True, null=True)
+    icon = models.ImageField(verbose_name='文章相关图片', blank=True, default='admin/img', upload_to='banner_imgs/',
+                             storage=BannerStorage())
     content = RedactorField(verbose_name='文章内容')
     read_times = models.IntegerField(verbose_name='阅读数', default=0)
     good_click = models.IntegerField(verbose_name='点赞次数', default=0)

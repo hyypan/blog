@@ -22,5 +22,6 @@ from boke import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^yafish/', include(yafish.urls))
+    url(r'^yafish/', include(yafish.urls)),
+    url(r'^redactor/', include('redactor.urls'))
 ] + static(settings.BASE_URL, document_root=settings.MEDIA_ROOT)
