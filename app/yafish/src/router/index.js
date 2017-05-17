@@ -45,6 +45,11 @@ export default new VueRouter({
       component: require('../components/Others.vue'),
     },
     {
+      path: '/content/Detail',
+      name: 'Detail',
+      component: require('../components/Detail.vue')
+    },
+    {
       path: '*',
       component: require('../components/common/404.vue'),
       name:'404',

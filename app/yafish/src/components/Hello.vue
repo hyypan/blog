@@ -4,8 +4,8 @@
       <div class="face">
         <img class="img" src="../assets/pis.jpg"/>
         <h1>YaphetS</h1>
-        <p>如果这里面的文章你都没法读懂，说明你比我菜，进去试试？</p>
-        <p>看不懂请联系我:</p>
+        <p>聪明在于勤奋，天才在于积累</p>
+        <p class="relation">联系方式:</p>
         <ul>
           <li><img class="first-img" src="../assets/wx.jpg"/> </li>
           <li><img src="../assets/qq.jpg"/> </li>
@@ -35,7 +35,7 @@ export default {
 
 .content{
     height:100%;
-    background-image:url('../assets/bg.jpg');
+    background-image:url('../assets/bg1.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -59,6 +59,11 @@ export default {
     height: 120px;
     border-radius: 60px;
     margin: 0 auto;
+}
+.relation{
+    position:relative;
+    top:20px;
+    font-size:10px;
 }
 .face h1{
     text-align: center;
@@ -92,6 +97,11 @@ ul img{
     margin-right: 48px;
     border-radius: 50px;
 }
+.enter2{
+    font-size: 19px;
+    position: relative;
+    top: -14px;
+}
 .enter{
     width: 200px;
     height: 30px;
@@ -120,9 +130,6 @@ ul li{
     width: 300px;
     height: 422px;
 }
-.face p{
-    font-size: 10px;
-}
 .enter{
     width: 119px;
     height: 18px;
@@ -130,6 +137,11 @@ ul li{
     padding-top: 3px;
     letter-spacing: 11px;
    padding-left: 11px;
+}
+.enter2{
+    font-size: 19px;
+    position: relative;
+    top: -14px;
 }
 }
 </style>

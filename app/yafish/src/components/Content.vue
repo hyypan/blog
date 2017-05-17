@@ -123,7 +123,7 @@
 .objects{
     margin: 10px;
     height: 76px;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid rgba(193, 193, 193, 0.5);
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -223,15 +223,20 @@ export default{
         $(this).show().siblings().hide()
 
         })
-
-
         },5000)
+    document.getElementsByClassName('firsttr')[0].addEventListener('click',function(){
+      alert(0)
+    })
+
+    },
+    watch:{
     },
     components:{
     FooterComponents,HeaderComponents,
     },
 
     methods: {
+
       getMore:function (){
       var allItems=$('.objects').length + $('.append1').length
       console.log('all',allItems)
@@ -239,7 +244,7 @@ export default{
       if (allItems<=this.c.length){
             for(var i=0;i<10;i++){
               $('.terms').append('<div class="append1"><div class="tittleStyle"><a href="/content/articles">'+this.c[i+7].tittle+'</a></div><div class="allDetail"><span>'+'作者:'+this.c[i+7].author+'</span><span>'+'最近更新时间:'+this.c[i+7].time+'</span><span>'+'评论:'+this.c[i+7].comments+'</span><span>'+'点赞次数:'+this.c[i+7].exTimes+'</span></div><div class="contentArticle">'+this.c[i+7].content+'</div></div>')
-              $('.append1').css({'margin': '10px','border-bottom': '1px solid silver','height': '76px','padding-bottom': '10px','padding-top':'10px'})
+              $('.append1').css({'margin': '10px','border-bottom': '1px solid rgba(193, 193, 193, 0.5)','height': '76px','padding-bottom': '10px','padding-top':'10px'})
               $('.tittleStyle').css({'text-align': 'center'})
               $('.allDetail').css({'text-align':'center','font-size': '12px','padding': '10px'})
               $('.contentArticle').css({'text-align':'center'})

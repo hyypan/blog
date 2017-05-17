@@ -7,7 +7,7 @@
     <div class="zeroUl" >
       <ul class="zzul">
         <li>
-          <ul class="">
+          <ul class="ul-a">
             <li class=""><router-link to='/'>首页</router-link></li>
             <li class="" @click="goToHotest">最热文章</li>
             <li class="" @click="goToNewest">最新文章</li>
@@ -15,7 +15,7 @@
           </ul>
         </li>
         <li>
-          <ul class="">
+          <ul class="ul-a">
             <li><img class="imgsTw" src="../../assets/python.png"/><span>python</span></li>
             <li><img class="imgsTw" src="../../assets/logo.png"/><span>vue</span></li>
             <li><img class="imgsTw" src="../../assets/linux.jpg"/><span>linux</span></li>
@@ -23,7 +23,7 @@
           </ul>
         </li>
         <li>
-          <ul class="">
+          <ul class="ul-a">
             <li><img class="imgsTw" src="../../assets/docker.jpg"/><span>docker</span></li>
             <li><img class="imgsTw" src="../../assets/django.jpg"/><span>django</span></li>
             <li><img class="imgsTw" src="../../assets/nginx.jpg"/><span>nginx</span></li>
@@ -173,7 +173,7 @@ header{
     float: left;
     background: #ffffff;
     z-index: 20;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(193, 193, 193, 0.5);
     top: 0;
     }
 .firstUl{
@@ -301,7 +301,7 @@ header{
    // background-size: cover;
     z-index: 20;
     background:#7b7979;
-    border-bottom: 1px solid #7b7979;
+    border-bottom: 1px solid rgba(193, 193, 193, 0.5);
     top: 0;
     }
 .potr{
@@ -319,10 +319,20 @@ header{
     export default{
         data(){
             return{
-                msg:'hello vue'
+                msg:'hello vue',
+                arr:[1,2]
             }
         },
         mounted:function(){
+         console.log(this.arr)
+        console.log($('.ul-a li'))
+       Array.from($('.ul-a li')).forEach(function(value,index,array){
+        $(value).click(function(value){
+          name = $(value)[0].target.innerHTML
+          router.push({name:'Detail', params:{'name':name}})
+
+        })
+        })
         document.getElementsByTagName('body')[0].addEventListener('mouseover',function(){
         if($(this).clientWidth>670){
             $('ul').show()
@@ -343,14 +353,6 @@ header{
          document.getElementsByClassName('contentCenter')[0].style.top='-40px'
         }
         })
-        //document.getElementsByTagName('ul')[0].addEventListener('mouseleave',function(){
-
-          //if(document.getElementsByTagName('body')[0].clientWidth<670){
-             // $(this).hide()
-            //}else{
-            //  $(this).show()
-            //}
-        //})
         },
 
 
