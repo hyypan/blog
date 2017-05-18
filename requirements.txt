@@ -20,3 +20,5 @@ fabric3
 django_rq
 pillow
 coreapi
+djangorestframework-jwt==1.10.0
+django-rest-swagger

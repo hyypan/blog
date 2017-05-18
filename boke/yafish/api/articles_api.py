@@ -1,5 +1,6 @@
 from rest_framework import serializers, viewsets
-from rest_framework.decorators import list_route
+from rest_framework.decorators import list_route, detail_route
+from rest_framework.response import Response
 
 from yafish import models as m
 
@@ -15,8 +16,8 @@ class ArticleViewSet(viewsets.ModelViewSet):
     serializer_class = ArticleSerializer
     queryset = m.Article.objects.all()
 
-    @list_route(methods='POST')
-    def abc(self, request):
+    @detail_route(methods=['get'])
+    def abc(self, request, pk):
         """
         desc: dfsdfds
         input:
@@ -25,4 +26,5 @@ class ArticleViewSet(viewsets.ModelViewSet):
           required: true
           location: form
         """
+        return Response(1)
         pass

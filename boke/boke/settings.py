@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'redactor',
     'rest_framework',
     'coreapi',
+    'rest_framework_swagger',
     # 第三方app
     'users',
     'yafish',
