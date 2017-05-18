@@ -1,4 +1,5 @@
 django==1.10
+djangorestframework
 beautifulsoup4 #解析html
 django-admin-easy # django-admin的辅助插件，可以快速生成action、自定义字段、自定义页面
 ipython # python的易用调试客户端
@@ -13,7 +14,9 @@ django-model-utils==2.5.2 #django模型扩展工具
 requests[security] # http请求工具包
 python3-keyczar #model加密字段
 django-encrypted-fields-python3
+django-wysiwyg-redactor # django-admin的富文本插件
 ansible
 fabric3
 django_rq
 pillow
+coreapi

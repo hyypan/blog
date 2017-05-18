@@ -215,7 +215,7 @@ export default{
     let that=this;
     var imgs=document.getElementsByClassName('imgStyle')
         $(imgs[0]).show()
-        var setInterObj=setInterval(function(){
+        var running=function (){
 
         var randomNum=Math.floor(Math.random()*10)
         console.log(randomNum)
@@ -223,7 +223,8 @@ export default{
         $(this).show().siblings().hide()
 
         })
-        },5000)
+        }
+        setInterval(running,2000)
     document.getElementsByClassName('firsttr')[0].addEventListener('click',function(){
       alert(0)
     })

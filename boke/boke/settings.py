@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'redactor',
+    'rest_framework',
+    'coreapi',
     # 第三方app
     'users',
     'yafish',
@@ -109,7 +111,13 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAdminUser',
+    ],
+    'PAGE_SIZE': 10
 
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
