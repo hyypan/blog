@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'coreapi',
     'rest_framework_swagger',
+    'rest_framework_docs',
     # 第三方app
     'users',
     'yafish',
@@ -146,3 +147,6 @@ print('MEDIA_ROOT', MEDIA_ROOT)
 REDACTOR_OPTIONS = {'lang': 'zh_cn'}
 REDACTOR_UPLOAD = 'uploads/'
 REDACTOR_UPLOAD_HANDLER = 'redactor.handlers.DateDirectoryUploader'
+REST_FRAMEWORK_DOCS = {
+    'HIDE_DOCS': False
+}

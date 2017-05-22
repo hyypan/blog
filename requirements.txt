@@ -22,3 +22,6 @@ pillow
 coreapi
 djangorestframework-jwt==1.10.0
 django-rest-swagger
+pygments
+markdown
+drfdocs

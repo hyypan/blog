@@ -16,15 +16,29 @@ class ArticleViewSet(viewsets.ModelViewSet):
     serializer_class = ArticleSerializer
     queryset = m.Article.objects.all()
 
-    @detail_route(methods=['get'])
-    def abc(self, request, pk):
+    @list_route(methods=['post'])
+    def bbb(self, request):
         """
-        desc: dfsdfds
-        input:
-        - name: a
-          desc: df
+        This text is the description for this API.
+        ---
+        parameters:
+        - name: icon
+          description: Foobar long description goes here
           required: true
-          location: form
+          type: string
+          paramType: form
+        - name: other_foo
+          paramType: query
+        - name: other_bar
+          paramType: query
+        - name: avatar
+          type: file
         """
-        return Response(1)
+        return Response({'aaaa'})
+
+    @list_route(methods=['post'])
+    def aaa(self, request):
+        """
+        
+        """
         pass
