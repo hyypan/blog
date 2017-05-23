@@ -19,20 +19,6 @@ class ArticleViewSet(viewsets.ModelViewSet):
     @list_route(methods=['post'])
     def bbb(self, request):
         """
-        This text is the description for this API.
-        ---
-        parameters:
-        - name: icon
-          description: Foobar long description goes here
-          required: true
-          type: string
-          paramType: form
-        - name: other_foo
-          paramType: query
-        - name: other_bar
-          paramType: query
-        - name: avatar
-          type: file
         """
         return Response({'aaaa'})
 

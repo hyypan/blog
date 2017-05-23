@@ -5,13 +5,13 @@
     <div class="contentCenter">
       <div class="banner">
         <div class="runningImg">
-          <img class="imgStyle" src="../assets/logo.png"/>
+          <img class="imgStyle" src="../assets/code.jpeg"/>
           <img class="imgStyle" src="../assets/Python.jpg"/>
           <img class="imgStyle" src="../assets/django.jpg"/>
           <img class="imgStyle" src="../assets/search.png"/>
           <img class="imgStyle" src="../assets/wx.jpg"/>
           <img class="imgStyle" src="../assets/yinhe.jpg"/>
-          <img class="imgStyle" src="../assets/bg.jpg"/>
+          <img  class="imgStyle" src="../assets/bg.jpg"/>
           <img class="imgStyle" src="../assets/github.jpg"/>
           <img class="imgStyle" src="../assets/linux.jpg"/>
         </div>

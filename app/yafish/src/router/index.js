@@ -17,6 +17,11 @@ export default new VueRouter({
           }
     },
     {
+      path:'/index',
+      name: 'index',
+      component: require('../components/index.vue'),
+    },
+    {
       path: '/content',
       name: 'content',
       // component: require('../components/Content.vue'),
