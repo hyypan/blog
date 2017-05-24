@@ -13,7 +13,7 @@
             </ul>
           </li>
           <li class="f2-li">
-            <div class="running-images" @click="run">
+            <div class="running-images">
               <ul>
               <li v-model="runningImg" v-for="r in runningImg" class="run-li">
                 <img :src="r" class="big-img"/>
@@ -61,8 +61,19 @@
         background-color:#ff0000;
     }
     .big-img{
+        transition-duration: 1s;
+       -moz-transition-duration: 1s; /* Firefox 4 */
+       -webkit-transition-duration: 1s; /* Safari 和 Chrome */
+       -o-transition-duration: 1s; /* Opera */
         height: 250px;
         width: 100%;
+    }
+    .big-img:hover{
+       transform:rotate(0deg) scale(1.1);
+      -ms-transform:rotate(0deg) scale(1.1); /* Internet Explorer */
+      -moz-transform:rotate(0deg) scale(1.1); /* Firefox */
+      -webkit-transform:rotate(0deg) scale(1.1); /* Safari 和 Chrome */
+      -o-transform:rotate(0deg) scale(1.1); /* Opera */
     }
     .running-images ul{
         padding:0;
@@ -129,8 +140,19 @@
 
     }
     .a-img{
+       transition-duration: 1s;
+       -moz-transition-duration: 1s; /* Firefox 4 */
+       -webkit-transition-duration: 1s; /* Safari 和 Chrome */
+       -o-transition-duration: 1s; /* Opera */
        width: 120px;
        height: 100px;
+    }
+    .a-img:hover{
+      transform:rotate(5deg) scale(1.1);
+      -ms-transform:rotate(5deg) scale(1.1); /* Internet Explorer */
+      -moz-transform:rotate(5deg) scale(1.1); /* Firefox */
+      -webkit-transform:rotate(5deg) scale(1.1); /* Safari 和 Chrome */
+      -o-transform:rotate(5deg) scale(1.1); /* Opera */
     }
     .t-ul{
       padding-left:0;
@@ -146,6 +168,7 @@ import FooterComponents from './common/footer'
     export default{
         data(){
             return{
+                setInter:'',
                 list:[],
                 img: require('../assets/bg1.jpeg'),
                 runningImg:[require('../assets/bg1.jpeg'), require('../assets/bg2.jpeg'), require('../assets/bg.jpg'),require('../assets/linux.jpg')],
@@ -161,7 +184,7 @@ import FooterComponents from './common/footer'
             FooterComponents,HeaderComponents,
         },
         mounted:function(){
-                let that=this
+            let that=this
             var run=function(){
              if(that.list.length==3){
               $('.run-li:eq(0)').animate({'left':'-300px'},500,function(){
@@ -204,52 +227,18 @@ import FooterComponents from './common/footer'
             $('.run-li:eq(1)').animate({'left':0},500)}
 
         }
-            var setInter = setInterval(run,2000)
+            that.setInter = setInterval(run,4000)
+          $('.running-images').mouseenter(function(){
+            console.log('clear',1)
+            clearInterval(that.setInter)
+          })
+          $('.running-images').mouseleave(function(){
+            that.setInter = setInterval(run,4000)
+            console.log('set')
+          })
         },
         methods:{
-        run:function(){
-              let that=this
-             if(that.list.length==3){
-              $('.run-li:eq(0)').animate({'left':'-300px'},500,function(){
-              var li=$(this)
-              $(this).remove()
-              that.list.push(li)
-            console.log('bbb',that.list.length)
-            if(that.list.length>=4){
-                that.list.forEach(function(currentValue,index,array){
-                    if(index==0){
-                    $(currentValue).animate({'left':0},200)
-                    $('.running-images ul').append(currentValue)
-                    }else{
-                    $(currentValue).animate({'left':'630px'},200)
-                    $('.running-images ul').append(currentValue)
-                    }
-                })
-                that.list=[]
-            }
-            })
-             }else{
-            $('.run-li:eq(0)').animate({'left':'-764px'},1000,function(){
-              var li=$(this)
-              $(this).remove()
-              that.list.push(li)
-            console.log('bbb',that.list.length)
-            if(that.list.length>=4){
-                that.list.forEach(function(currentValue,index,array){
-                    if(index==0){
-                    $(currentValue).animate({'left':0},200)
-                    $('.running-images ul').append(currentValue)
-                    }else{
-                    $(currentValue).animate({'left':'630px'},200)
-                    $('.running-images ul').append(currentValue)
-                    }
-                })
-                that.list=[]
-            }
-            })
-            $('.run-li:eq(1)').animate({'left':0},500)}
 
-        }
         }
     }
 </script>
