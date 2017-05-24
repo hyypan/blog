@@ -13,10 +13,10 @@
             </ul>
           </li>
           <li class="f2-li">
-            <div class="running-images" >
+            <div class="running-images" @click="run">
               <ul>
-              <li v-model="runningImg" v-for="r in runningImg">
-                <img :src="r"/>
+              <li v-model="runningImg" v-for="r in runningImg" class="run-li">
+                <img :src="r" class="big-img"/>
               </li>
               </ul>
             </div>
@@ -60,6 +60,23 @@
     body{
         background-color:#ff0000;
     }
+    .big-img{
+        height: 250px;
+        width: 100%;
+    }
+    .running-images ul{
+        padding:0;
+    }
+    .running-images li{
+        display:inline;
+        width:100%;
+        position:absolute;
+        left:630px;
+    }
+    .running-images li:first-child{
+        left:0;
+    }
+
     .four-ul{
         list-style: none;
         display: -webkit-inline-box;
@@ -99,16 +116,17 @@
       background:sliver;
     }
     .f2-li{
-      width:60%;
+      width:652px;
 
     }
     .running-images{
        position: relative;
        height: 250px;
        background: #fff;
-      /* padding: 23px; */
        margin: 11px;
        list-style: none;
+       overflow:hidden;
+
     }
     .a-img{
        width: 120px;
@@ -128,17 +146,110 @@ import FooterComponents from './common/footer'
     export default{
         data(){
             return{
-                runningImg:['../assets/bg1.jpeg', '../assets/bg2.jpeg', '../assets/bg2.jpeg'],
+                list:[],
+                img: require('../assets/bg1.jpeg'),
+                runningImg:[require('../assets/bg1.jpeg'), require('../assets/bg2.jpeg'), require('../assets/bg.jpg'),require('../assets/linux.jpg')],
                 articles:[
-                {'src': '../assets/bg1.jpeg','title': '文章标题1', 'content': '文章内容1','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
-                {'src': '../assets/bg2.jpeg','title': '文章标题2', 'content': '文章内容2','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
-                {'src': '../assets/bg.jpg','title': '文章标题3', 'content': '文章内容3','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
-                {'src': '../assets/linux.jpg','title': '文章标题4', 'content': '文章内容4','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
+                {'src': require('../assets/bg1.jpeg'),'title': '文章标题1', 'content': '文章内容1','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
+                {'src': require('../assets/bg2.jpeg'),'title': '文章标题2', 'content': '文章内容2','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
+                {'src': require('../assets/bg.jpg'),'title': '文章标题3', 'content': '文章内容3','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
+                {'src': require('../assets/linux.jpg'),'title': '文章标题4', 'content': '文章内容4','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
                 ]
             }
         },
         components:{
             FooterComponents,HeaderComponents,
+        },
+        mounted:function(){
+                let that=this
+            var run=function(){
+             if(that.list.length==3){
+              $('.run-li:eq(0)').animate({'left':'-300px'},500,function(){
+              var li=$(this)
+              $(this).remove()
+              that.list.push(li)
+            console.log('bbb',that.list.length)
+            if(that.list.length>=4){
+                that.list.forEach(function(currentValue,index,array){
+                    if(index==0){
+                    $(currentValue).animate({'left':0},200)
+                    $('.running-images ul').append(currentValue)
+                    }else{
+                    $(currentValue).animate({'left':'630px'},200)
+                    $('.running-images ul').append(currentValue)
+                    }
+                })
+                that.list=[]
+            }
+            })
+             }else{
+            $('.run-li:eq(0)').animate({'left':'-764px'},1000,function(){
+              var li=$(this)
+              $(this).remove()
+              that.list.push(li)
+            console.log('bbb',that.list.length)
+            if(that.list.length>=4){
+                that.list.forEach(function(currentValue,index,array){
+                    if(index==0){
+                    $(currentValue).animate({'left':0},200)
+                    $('.running-images ul').append(currentValue)
+                    }else{
+                    $(currentValue).animate({'left':'630px'},200)
+                    $('.running-images ul').append(currentValue)
+                    }
+                })
+                that.list=[]
+            }
+            })
+            $('.run-li:eq(1)').animate({'left':0},500)}
+
+        }
+            var setInter = setInterval(run,2000)
+        },
+        methods:{
+        run:function(){
+              let that=this
+             if(that.list.length==3){
+              $('.run-li:eq(0)').animate({'left':'-300px'},500,function(){
+              var li=$(this)
+              $(this).remove()
+              that.list.push(li)
+            console.log('bbb',that.list.length)
+            if(that.list.length>=4){
+                that.list.forEach(function(currentValue,index,array){
+                    if(index==0){
+                    $(currentValue).animate({'left':0},200)
+                    $('.running-images ul').append(currentValue)
+                    }else{
+                    $(currentValue).animate({'left':'630px'},200)
+                    $('.running-images ul').append(currentValue)
+                    }
+                })
+                that.list=[]
+            }
+            })
+             }else{
+            $('.run-li:eq(0)').animate({'left':'-764px'},1000,function(){
+              var li=$(this)
+              $(this).remove()
+              that.list.push(li)
+            console.log('bbb',that.list.length)
+            if(that.list.length>=4){
+                that.list.forEach(function(currentValue,index,array){
+                    if(index==0){
+                    $(currentValue).animate({'left':0},200)
+                    $('.running-images ul').append(currentValue)
+                    }else{
+                    $(currentValue).animate({'left':'630px'},200)
+                    $('.running-images ul').append(currentValue)
+                    }
+                })
+                that.list=[]
+            }
+            })
+            $('.run-li:eq(1)').animate({'left':0},500)}
+
+        }
         }
     }
 </script>
