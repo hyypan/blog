@@ -6,7 +6,64 @@
           <li class="f-li" style="position:fixed;">
             <ul>
               <li class="portrail">这里放头像</li>
-              <li class="cenlender">这里放日历</li>
+              <li class="cenlender">
+                <div class="mon-year-box">
+                  <span class="down" @click="down"><</span>
+                  <span class="year"></span>
+                  <span class="">年</span>
+                  <span class="mon"></span>
+                  <span class="">月</span>
+                  <span class="day"></span>
+                  <span class="">日</span>
+                  <span class="up" @click="up">></span>
+                </div>
+                <ul class="weeks">
+                  <li>一</li>
+                  <li>二</li>
+                  <li>三</li>
+                  <li>四</li>
+                  <li>五</li>
+                  <li>六</li>
+                  <li>日</li>
+                </ul>
+                <ul class="days">
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                  <li>11</li>
+                </ul>
+              </li>
               <li class="tags">这里放标签</li>
             </ul>
           </li>
@@ -33,7 +90,6 @@
                       <li><img src="../assets/eyes.png"/><span>{{a.readTimes}}</span></li>
                       <li><img src="../assets/commds.png"/><span>{{a.commends}}</span></li>
                       <li><img src="../assets/good.png"/><span>{{a.goodClick}}</span></li>
-
                     </ul>
                   </div>
                 </div>
@@ -63,6 +119,24 @@
 <style scoped>
     body{
         background-color:#ff0000;
+    }
+    .days li{
+        list-style: none;
+        display: inline-block;
+        font-size: 10px;
+        margin-left:10px;
+    }
+    .weeks li{
+        list-style: none;
+        display: inline-block;
+        font-size: 10px;
+        margin-left:10px;
+    }
+    .mon-year-box{
+        background: #b5b9b3;
+    }
+    .mon-year-box span{
+        margin-left: 5px;
     }
     .tags{
         background: white;
@@ -278,9 +352,41 @@ import FooterComponents from './common/footer'
             //that.setInter = setInterval(run,4000)
             console.log('set')
           })
+          //日历计算
+          var dateToday=new Date()
+          console.log(dateToday.toLocaleDateString())
+          $('.year').html(dateToday.getFullYear())
+          $('.mon').html(Number(dateToday.getMonth())+Number(1))
+          $('.day').html(dateToday.getDate())
+
+
         },
         methods:{
+            up:function(){
+              var mon=$('.mon').html()
+              var year=$('.year').html()
+              if(Number(mon)<12){
+                mon=Number(mon)+1
+                $('.mon').html(mon)
+              }else{
+                $('.mon').html(1)
+                $('.year').html(Number(year)+1)
+              }
 
+            },
+            down:function(){
+              var mon=$('.mon').html()
+              var year=$('.year').html()
+              if(Number(mon)==1){
+                mon=12
+                $('.mon').html(mon)
+                $('.year').html(Number(year)-1)
+
+              }else{
+                $('.mon').html(Number(mon)-1)
+              }
+
+            }
         }
     }
 </script>

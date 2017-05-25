@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e346f31-ad9a-427a-9564-04f3b34cc6b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/components/Hello.vue" afterPath="$PROJECT_DIR$/app/yafish/src/components/Hello.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/components/common/header2.vue" afterPath="$PROJECT_DIR$/app/yafish/src/components/common/header2.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/components/index.vue" afterPath="$PROJECT_DIR$/app/yafish/src/components/index.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -116,8 +113,8 @@
       <file leaf-file-name="index.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/yafish/src/components/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+            <state relative-caret-position="389">
+              <caret line="387" column="0" lean-forward="true" selection-start-line="387" selection-start-column="0" selection-end-line="387" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -289,8 +286,8 @@
     <handled-path value="$PROJECT_DIR$/app/yafish/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="409" />
-    <option name="y" value="170" />
+    <option name="x" value="477" />
+    <option name="y" value="213" />
     <option name="width" value="1474" />
     <option name="height" value="760" />
   </component>
@@ -853,7 +850,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="409" y="170" width="1474" height="760" extended-state="0" />
+    <frame x="477" y="213" width="1474" height="760" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19622906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1277,8 +1274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/yafish/src/components/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        <state relative-caret-position="389">
+          <caret line="387" column="0" lean-forward="true" selection-start-line="387" selection-start-column="0" selection-end-line="387" selection-end-column="0" />
           <folding />
         </state>
       </provider>
