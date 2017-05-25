@@ -393,30 +393,72 @@ import FooterComponents from './common/footer'
           $('.year').html(dateToday.getFullYear())
           $('.mon').html(Number(dateToday.getMonth())+Number(1))
           $('.day').html(dateToday.getDate())
+
          //计算对应的星期和日期
          var year=$('.year').html()
          var mon=$('.mon').html()
-         if(mon=='12'){
-            mon=0
-         }else{
-          mon=Number(mon)-1
-         }
          console.log('mon',mon)
+         //if(mon=='12'){
+            //mon=0
+         //}else{
+          //mon=Number(mon)-1
+         //}
+        // console.log('mon',mon)
          var day=$('.day').html()
 
          var date=new Date()
-         date.setFullYear(year,mon,day)
+         date.setFullYear(year,mon-1,day)
          console.log('setdate',date)
          var weekDay= date.getDay()
-
+         console.log('mon2',mon)
          var max=Math.floor(Number(date.getDate())/7)
          var midNum=max*7+Number(weekDay)-1
          $('.days li').eq(midNum).html(date.getDate())
+         //判断瑞年
+         var learYear=function(inYear){
+          if(Number(inYear)/400==0){
+            return true
+         }else{
+          if(Number(inYear)/100==0){
+            var intNum=Number(inYear)/100
+              if(intNum/4==0){
+                return true
+                }else{
+                return false
+                }
+         }else{
+            if(Number(inYear)/4==0){
+            return true
+            }else{
+            return false
+            }
+         }}
+         }
+
          for(var i=0;i<midNum;i++){
          $('.days li').eq(midNum-i-1).html(date.getDate()-1-i)
          }
+         var regExp=/11|[4|6|8|9]/
          for(var j=0;j<35-midNum;j++){
-          $('.days li').eq(midNum+1+j).html(date.getDate()+1+j)
+            var newDate=date.getDate()+1+j
+            if(regExp.test(mon) && newDate>='31'){
+              console.log(31)
+               newDate=j-4
+            }else if(mon=='2' && learYear(year) && newDate>='30'){
+                          console.log(30)
+
+            newDate=j-3
+            }else if(mon=='2' && learYear(year) && newDate>='29'){
+                          console.log(29)
+
+            newDate=j-2
+            }else if(newDate>='32'){
+                          console.log(32)
+
+            newDate=j-5
+            }
+
+          $('.days li').eq(midNum+1+j).html(newDate)
          }
 
 
