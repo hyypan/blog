@@ -9,11 +9,11 @@
               <li class="cenlender">
                 <div class="mon-year-box">
                   <span class="down" @click="down"><</span>
-                  <span class="year"></span>
+                  <span class="year" v-model="year"></span>
                   <span class="">年</span>
-                  <span class="mon"></span>
+                  <span class="mon" v-model="mon"></span>
                   <span class="">月</span>
-                  <span class="day"></span>
+                  <span class="day" v-model="day"></span>
                   <span class="">日</span>
                   <span class="up" @click="up">></span>
                 </div>
@@ -120,16 +120,24 @@
     body{
         background-color:#ff0000;
     }
+    .days{
+      width:188px;
+    }
     .days li{
         list-style: none;
         display: inline-block;
         font-size: 10px;
-        margin-left:10px;
+        margin-left:12px;
+        width:11px;
+        margin-bottom: 17px;
+    }
+    .weeks{
+        width: 200px;
     }
     .weeks li{
         list-style: none;
         display: inline-block;
-        font-size: 10px;
+        font-size: 13px;
         margin-left:10px;
     }
     .mon-year-box{
@@ -283,6 +291,9 @@ import FooterComponents from './common/footer'
     export default{
         data(){
             return{
+                year:'',
+                mon:'',
+                day:'',
                 setInter:'',
                 list:[],
                 img: require('../assets/bg1.jpeg'),
@@ -297,6 +308,30 @@ import FooterComponents from './common/footer'
         },
         components:{
             FooterComponents,HeaderComponents,
+        },
+        watch: {
+        year:function(val,oldVal){
+        },
+        mon:function(val, oldVal){
+         var year=$('.year').html()
+         var mon=$('.mon').html()
+         if(mon=='12'){
+            mon=0
+         }else{
+          mon=Number(mon)-1
+         }
+         console.log('mon',mon)
+         var day=$('.day').html()
+
+         var date=new Date()
+         date.setFullYear(year,mon,day)
+         console.log('setdate',date)
+         var weekDay= date.getDay()
+
+         var max=Math.floor(Number(date.getDate())/7)
+
+         $('.days li').eq(max*7+Number(weekDay)-1).html(date.getDate())
+        },
         },
         mounted:function(){
             let that=this
@@ -352,12 +387,37 @@ import FooterComponents from './common/footer'
             //that.setInter = setInterval(run,4000)
             console.log('set')
           })
-          //日历计算
+          //日历计算1
           var dateToday=new Date()
           console.log(dateToday.toLocaleDateString())
           $('.year').html(dateToday.getFullYear())
           $('.mon').html(Number(dateToday.getMonth())+Number(1))
           $('.day').html(dateToday.getDate())
+         //计算对应的星期和日期
+         var year=$('.year').html()
+         var mon=$('.mon').html()
+         if(mon=='12'){
+            mon=0
+         }else{
+          mon=Number(mon)-1
+         }
+         console.log('mon',mon)
+         var day=$('.day').html()
+
+         var date=new Date()
+         date.setFullYear(year,mon,day)
+         console.log('setdate',date)
+         var weekDay= date.getDay()
+
+         var max=Math.floor(Number(date.getDate())/7)
+         var midNum=max*7+Number(weekDay)-1
+         $('.days li').eq(midNum).html(date.getDate())
+         for(var i=0;i<midNum;i++){
+         $('.days li').eq(midNum-i-1).html(date.getDate()-1-i)
+         }
+         for(var j=0;j<35-midNum;j++){
+          $('.days li').eq(midNum+1+j).html(date.getDate()+1+j)
+         }
 
 
         },
@@ -368,9 +428,12 @@ import FooterComponents from './common/footer'
               if(Number(mon)<12){
                 mon=Number(mon)+1
                 $('.mon').html(mon)
+                this.mon=mon
               }else{
                 $('.mon').html(1)
+                this.mon=1
                 $('.year').html(Number(year)+1)
+                this.year=Number(year)+1
               }
 
             },
@@ -379,11 +442,14 @@ import FooterComponents from './common/footer'
               var year=$('.year').html()
               if(Number(mon)==1){
                 mon=12
+                this.mon=12
                 $('.mon').html(mon)
                 $('.year').html(Number(year)-1)
+                this.year=Number(year)-1
 
               }else{
                 $('.mon').html(Number(mon)-1)
+                this.mon=Number(mon)-1
               }
 
             }
