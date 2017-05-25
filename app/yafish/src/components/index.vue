@@ -19,6 +19,9 @@
                 <img :src="r" class="big-img"/>
               </li>
               </ul>
+              <div class="circle" >
+                <div v-for="r in runningImg" class="yuan"></div>
+              </div>
             </div>
             <ul class="t-ul">
               <li v-model="articles" v-for="a in articles" class="article-li">
@@ -59,6 +62,22 @@
 <style scoped>
     body{
         background-color:#ff0000;
+    }
+    .circle{
+        position: absolute;
+    /* margin: auto; */
+        margin-left: 30%;
+        top: 90%;
+
+    }
+    .yuan{
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 5px;
     }
     .big-img{
         transition-duration: 1s;
@@ -188,6 +207,7 @@ import FooterComponents from './common/footer'
             var run=function(){
              if(that.list.length==3){
               $('.run-li:eq(0)').animate({'left':'-300px'},500,function(){
+              $('.yuan:eq(3)').css({'background':'#1cce10'}).siblings().css({'background':'white'})
               var li=$(this)
               $(this).remove()
               that.list.push(li)
@@ -227,13 +247,13 @@ import FooterComponents from './common/footer'
             $('.run-li:eq(1)').animate({'left':0},500)}
 
         }
-            that.setInter = setInterval(run,4000)
+            //that.setInter = setInterval(run,4000)
           $('.running-images').mouseenter(function(){
             console.log('clear',1)
-            clearInterval(that.setInter)
+            //clearInterval(that.setInter)
           })
           $('.running-images').mouseleave(function(){
-            that.setInter = setInterval(run,4000)
+            //that.setInter = setInterval(run,4000)
             console.log('set')
           })
         },
