@@ -3,16 +3,14 @@
       <header-components></header-components>
       <div>
         <ul class="f-ul">
-          <li class="f-li">
+          <li class="f-li" style="position:fixed;">
             <ul>
-              <li>1</li>
-              <li>12</li>
-              <li>13</li>
-              <li>14</li>
-              <li>15</li>
+              <li class="portrail">这里放头像</li>
+              <li class="cenlender">这里放日历</li>
+              <li class="tags">这里放标签</li>
             </ul>
           </li>
-          <li class="f2-li">
+          <li class="f2-li" style="position: relative;left: 20%;">
             <div class="running-images">
               <ul>
               <li v-model="runningImg" v-for="r in runningImg" class="run-li">
@@ -42,7 +40,10 @@
               </li>
             </ul>
           </li>
-          <li class="f-li">
+          <li class="f-li" style="position: relative;
+              margin-left: 21%;
+              background: white;
+              margin-top: 10px;">
             <div>这里放一些搜索</div>
             <ul>
               <li>搜索列表</li>
@@ -51,8 +52,8 @@
               <li>搜索列表</li>
               <li>搜索列表</li>
             </ul>
-            <div>这里放日历</div>
-            <div>这里放标签</div>
+            <div>这里预留位置1</div>
+            <div>这里预留位置2</div>
           </li>
         </ul>
       </div>
@@ -62,6 +63,22 @@
 <style scoped>
     body{
         background-color:#ff0000;
+    }
+    .tags{
+        background: white;
+        margin-top: 24px;
+        height: 229px;
+    }
+    .cenlender{
+        background: white;
+        margin-top: 24px;
+        height: 229px;
+
+    }
+    .portrail{
+    background: white;
+    margin-top: 1px;
+    height: 111px;
     }
     .circle{
         position: absolute;
@@ -140,10 +157,15 @@
         width: 100%;
         background: #eee;
         margin: 0;
+        padding:0;
+        margin-top:73px;
     }
     .f-li{
-      width:15%;
+      width:20%;
       background:sliver;
+    }
+    .f-li ul{
+      padding:10px;
     }
     .f2-li{
       width:652px;

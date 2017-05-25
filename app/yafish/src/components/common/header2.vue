@@ -1,15 +1,16 @@
 <template>
-    <div>
-      <div class="header">111</div>
-    </div>
+    <div class="header">这里是header</div>
 </template>
 <style scoped>
   .header{
+    position: fixed;
     height: 75px;
+    background: white;
     width: 100%;
-    /* background: rebeccapurple; */
-    //border-bottom: 1px solid #4c3c3c;
+    z-index: 10;
+    text-align:center;
   }
+
 </style>
 <script>
     export default{
