@@ -3,9 +3,12 @@
       <header-components></header-components>
       <div>
         <ul class="f-ul">
-          <li class="f-li" style="position:fixed;">
+          <li class="f-li">
             <ul>
-              <li class="portrail">这里放头像</li>
+              <li class="portrail">
+                <div><img src="../assets/docker.jpg"/> </div>
+                <div></div>
+              </li>
               <li class="cenlender">
                 <div class="mon-year-box">
                   <span class="down" @click="down"><</span>
@@ -64,10 +67,30 @@
                   <li>11</li>
                 </ul>
               </li>
-              <li class="tags">这里放标签</li>
+              <li class="tags">
+                <ul>
+                  <li><div class="tags-d">Python(1)</div></li>
+                  <li><div class="tags-d">Django(1)</div></li>
+                  <li><div class="tags-d">Vue(1)</div></li>
+                  <li><div class="tags-d">Webpack(1)</div></li>
+                  <li><div class="tags-d">Ansible(1)</div></li>
+                  <li><div class="tags-d">Docker(1)</div></li>
+                  <li><div class="tags-d">Linux(1)</div></li>
+                  <li><div class="tags-d">Git(1)</div></li>
+                  <li><div class="tags-d">机器学习(1)</div></li>
+                  <li><div class="tags-d">算法(1)</div></li>
+                  <li><div class="tags-d">生活和感想(1)</div></li>
+                  <li><div class="tags-d">游戏(1)</div></li>
+                  <li><div class="tags-d">NBA(1)</div></li>
+                  <li><div class="tags-d">PHP(1)</div></li>
+                  <li><div class="tags-d">JavaScript(1)</div></li>
+                  <li><div class="tags-d">Html(1)</div></li>
+
+                </ul>
+              </li>
             </ul>
           </li>
-          <li class="f2-li" style="position: relative;left:234px;">
+          <li class="f2-li" style="position: relative;left:-7px;">
             <div class="running-images">
               <ul>
               <li v-model="runningImg" v-for="r in runningImg" class="run-li">
@@ -97,7 +120,7 @@
             </ul>
           </li>
           <li class="f-li" style="position: relative;
-              margin-left: 21%;
+              float:right;
               background: white;
               margin-top: 10px;">
             <div>这里放一些搜索</div>
@@ -119,6 +142,11 @@
 <style scoped>
     body{
         background-color:#ff0000;
+    }
+    .tags-d{
+        background:#eeeeee;
+        padding: 4px;
+
     }
     .up,.down{
         display: inline-block;
@@ -158,9 +186,15 @@
         margin-left: 3px;
     }
     .tags{
-        background: white;
-        margin-top: 24px;
-        height: 229px;
+    background: white;
+    margin-top: 8px;
+    height: 289px;
+    }
+    .tags li{
+        list-style: none;
+        display: inline-block;
+        margin: 6px;
+        font-size: 12px;
     }
     .cenlender{
         background: white;
@@ -170,9 +204,17 @@
         padding-left: 5px;
     }
     .portrail{
-    background: white;
+    background: rgb(238, 238, 238);
     margin-top: 1px;
-    height: 111px;
+    height: 208px;
+    }
+    .portrail img{
+        width: 90px;
+        height: 90px;
+        border: 1px solid silver;
+        border-radius: 45px;
+        position: relative;
+        left: 69px;
     }
     .circle{
         position: absolute;
@@ -315,6 +357,10 @@ import FooterComponents from './common/footer'
                 {'src': require('../assets/bg2.jpeg'),'title': '文章标题2', 'content': '文章内容2','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
                 {'src': require('../assets/bg.jpg'),'title': '文章标题3', 'content': '文章内容3','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
                 {'src': require('../assets/linux.jpg'),'title': '文章标题4', 'content': '文章内容4','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
+                {'src': require('../assets/linux.jpg'),'title': '文章标题4', 'content': '文章内容4','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
+                {'src': require('../assets/linux.jpg'),'title': '文章标题4', 'content': '文章内容4','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
+                {'src': require('../assets/linux.jpg'),'title': '文章标题4', 'content': '文章内容4','readTimes':'10', 'goodClick':'100', 'commends':'10','time':'2017.2.2'},
+
                 ]
             }
         },
@@ -526,8 +572,11 @@ import FooterComponents from './common/footer'
           for(var i=0;i<=35;i++){
             if(i>maxNum){
              $('.days li').eq(i+weekDay-2).html(i-maxNum)
+             $('.days li').eq(i+weekDay-2).css({'color':'#bbb9b9'})
+
             }else{
              $('.days li').eq(weekDay-1+i).html(i+1)
+             $('.days li').eq(i+weekDay-1).css({'color':'black'})
              if(i==0){
              for(var k=0;k<weekDay;k++){
               $('.days li').eq(weekDay-k-2).css({'color':'#bbb9b9'})
