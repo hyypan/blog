@@ -143,6 +143,11 @@
     body{
         background-color:#ff0000;
     }
+    @media(max-width:1024px){
+    .f-li{
+      display:none;
+    }
+    }
     .search-ul{
         margin-left: 4px;
     }
