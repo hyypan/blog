@@ -123,8 +123,8 @@
               float:right;
               background: white;
               margin-top: 10px;">
-            <div>这里放一些搜索</div>
-            <ul>
+            <div class="input-d"><input type="text"/></div>
+            <ul class="search-ul">
               <li>搜索列表</li>
               <li>搜索列表</li>
               <li>搜索列表</li>
@@ -142,6 +142,12 @@
 <style scoped>
     body{
         background-color:#ff0000;
+    }
+    .search-ul{
+        margin-left: 4px;
+    }
+    .input-d{
+        margin: 40px;
     }
     .tags-d{
         background:#eeeeee;
