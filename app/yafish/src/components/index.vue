@@ -67,7 +67,7 @@
               <li class="tags">这里放标签</li>
             </ul>
           </li>
-          <li class="f2-li" style="position: relative;left: 20%;">
+          <li class="f2-li" style="position: relative;left:234px;">
             <div class="running-images">
               <ul>
               <li v-model="runningImg" v-for="r in runningImg" class="run-li">
@@ -138,7 +138,9 @@
         font-size: 10px;
         margin-left:12px;
         width:11px;
-        margin-bottom: 17px;
+        margin-bottom: 17px;    }
+    .days li:hover{
+        text-decoration: underline;
     }
     .weeks{
         width: 200px;
@@ -164,7 +166,8 @@
         background: white;
         margin-top: 24px;
         height: 229px;
-
+        padding-top: 7px;
+        padding-left: 5px;
     }
     .portrail{
     background: white;
@@ -252,7 +255,7 @@
         margin-top:73px;
     }
     .f-li{
-      width:20%;
+      width:245px;
       background:sliver;
     }
     .f-li ul{
@@ -370,17 +373,27 @@ import FooterComponents from './common/footer'
             $('.days li').eq(j-1).html(31-weekDay+j)
             }else if(mon2=='3' && learYear(year)){
              $('.days li').eq(j-1).html(30-weekDay+j)
+
             }else if(mon2=='3' && !learYear(year)){
              $('.days li').eq(j-1).html(29-weekDay+j)
+
             }else{
              $('.days li').eq(j-1).html(32-weekDay+j)
+
             }
           }
           for(var i=0;i<=35;i++){
             if(i>maxNum){
              $('.days li').eq(i+weekDay-2).html(i-maxNum)
+             $('.days li').eq(i+weekDay-2).css({'color':'#bbb9b9'})
             }else{
              $('.days li').eq(weekDay-1+i).html(i+1)
+             $('.days li').eq(i+weekDay-1).css({'color':'black'})
+             if(i==0){
+             for(var k=0;k<weekDay;k++){
+              $('.days li').eq(weekDay-k-2).css({'color':'#bbb9b9'})
+             }
+             }
             }
 
           }
@@ -468,6 +481,7 @@ import FooterComponents from './common/footer'
          }
          console.log('mon2',weekDay)
          $('.days li').eq(weekDay-1).html(1)
+         $('.days li').eq(day-1).css({'text-decoration': 'underline'})
          //判断瑞年
 
          var learYear=function(inYear){
@@ -498,12 +512,15 @@ import FooterComponents from './common/footer'
           for(var j=weekDay;j>0;j--){
             if(regExp.test(mon2-1)){
             $('.days li').eq(j-1).html(31-weekDay+j)
+
             }else if(mon2=='3' && learYear(year)){
              $('.days li').eq(j-1).html(30-weekDay+j)
+
             }else if(mon2=='3' && !learYear(year)){
              $('.days li').eq(j-1).html(29-weekDay+j)
             }else{
              $('.days li').eq(j-1).html(32-weekDay+j)
+
             }
           }
           for(var i=0;i<=35;i++){
@@ -511,6 +528,11 @@ import FooterComponents from './common/footer'
              $('.days li').eq(i+weekDay-2).html(i-maxNum)
             }else{
              $('.days li').eq(weekDay-1+i).html(i+1)
+             if(i==0){
+             for(var k=0;k<weekDay;k++){
+              $('.days li').eq(weekDay-k-2).css({'color':'#bbb9b9'})
+             }
+             }
             }
 
           }
