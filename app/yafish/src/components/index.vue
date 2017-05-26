@@ -490,13 +490,13 @@ import FooterComponents from './common/footer'
             $('.run-li:eq(1)').animate({'left':0},500)}
 
         }
-            //that.setInter = setInterval(run,4000)
+            that.setInter = setInterval(run,4000)
           $('.running-images').mouseenter(function(){
             console.log('clear',1)
-            //clearInterval(that.setInter)
+            clearInterval(that.setInter)
           })
           $('.running-images').mouseleave(function(){
-            //that.setInter = setInterval(run,4000)
+            that.setInter = setInterval(run,4000)
             console.log('set')
           })
           //日历计算1
