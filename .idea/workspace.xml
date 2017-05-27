@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e346f31-ad9a-427a-9564-04f3b34cc6b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/components/common/footer.vue" afterPath="$PROJECT_DIR$/app/yafish/src/components/common/footer.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yafish/src/components/index.vue" afterPath="$PROJECT_DIR$/app/yafish/src/components/index.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,8 +91,8 @@
       <file leaf-file-name="index.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/yafish/src/components/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="401" column="14" lean-forward="false" selection-start-line="401" selection-start-column="14" selection-end-line="401" selection-end-column="14" />
+            <state relative-caret-position="229">
+              <caret line="381" column="5" lean-forward="false" selection-start-line="381" selection-start-column="5" selection-end-line="381" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -1260,8 +1259,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/yafish/src/components/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="401" column="14" lean-forward="false" selection-start-line="401" selection-start-column="14" selection-end-line="401" selection-end-column="14" />
+        <state relative-caret-position="229">
+          <caret line="381" column="5" lean-forward="false" selection-start-line="381" selection-start-column="5" selection-end-line="381" selection-end-column="5" />
           <folding />
         </state>
       </provider>

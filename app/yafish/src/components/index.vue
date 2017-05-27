@@ -107,7 +107,7 @@
                 <div class="t-article">
                   <p>{{a.title}}</p>
                   <p>{{a.content}}</p>
-                  <div>
+                  <div class="icons">
                     <ul class="four-ul">
                       <li><img src="../assets/clock.png"/><span>{{a.time}}</span></li>
                       <li><img src="../assets/eyes.png"/><span>{{a.readTimes}}</span></li>
@@ -358,9 +358,16 @@
     }
 
 @media(max-width:1024px){
+    .icons{
+    position: relative;
+    left: -80px;
+    top: 3px;
+    }
     .a-img{
+    display: block;
+    float: left;
     width: 30%;
-    height: 50px;
+    height: 75px;
     }
     .four-ul img{
         width:13px;
@@ -373,15 +380,14 @@
     .four-ul li:first-child{
         margin-left:-45px;
     }
-    .four-ul li{
-        margin-left: 8px;
-    }
     .t-article{
-    position: relative;
-    top: -68px;
-    left: 31%;
-    width: 76%;
+    top:0;
+    left:0;
+    display: block;
     background: rebeccapurple;
+    float: left;
+    width: 70%;
+    height: 75px;
     }
     .big-img:hover{
        transform:rotate(0deg) scale(1.1);
@@ -399,7 +405,7 @@
     overflow: hidden;
     }
     .article-li{
-    height: 77px;
+    height: 100px;
     padding: 8px;
     background: white;
     }
