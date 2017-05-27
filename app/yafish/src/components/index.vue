@@ -90,7 +90,7 @@
               </li>
             </ul>
           </li>
-          <li class="f2-li" style="position: relative;left:-7px;">
+          <li class="f2-li">
             <div class="running-images">
               <ul>
               <li v-model="runningImg" v-for="r in runningImg" class="run-li">
@@ -119,7 +119,7 @@
               </li>
             </ul>
           </li>
-          <li class="f-li" style="position: relative;
+          <li class="f3-li" style="position: relative;
               float:right;
               background: white;
               margin-top: 10px;">
@@ -143,11 +143,10 @@
     body{
         background-color:#ff0000;
     }
-    @media(max-width:1024px){
-    .f-li{
-      display:none;
-    }
-    }
+
+
+
+
     .search-ul{
         margin-left: 4px;
     }
@@ -314,7 +313,16 @@
     .f-li ul{
       padding:10px;
     }
+    .f3-li{
+      width:245px;
+      background:sliver;
+    }
+    .f3-li ul{
+      padding:10px;
+    }
     .f2-li{
+      position: relative;
+      left:-7px;
       width:652px;
 
     }
@@ -347,6 +355,64 @@
     }
     li{
       list-style:none;
+    }
+
+@media(max-width:1024px){
+    .four-ul img{
+        width:13px;
+    }
+    .f2-li{
+    position: relative;
+    left:0;
+    width: 100%;
+    }
+    .four-ul li:first-child{
+        margin-left:-45px;
+    }
+    .four-ul li{
+        margin-left: 8px;
+    }
+    .t-article{
+    position: relative;
+    top: -109px;
+    left: 124px;
+    width: 57%;
+    background:rebeccapurple;
+    }
+    .big-img:hover{
+       transform:rotate(0deg) scale(1.1);
+      -ms-transform:rotate(0deg) scale(1.1); /* Internet Explorer */
+      -moz-transform:rotate(0deg) scale(1.1); /* Firefox */
+      -webkit-transform:rotate(0deg) scale(1.1); /* Safari 和 Chrome */
+      -o-transform:rotate(0deg) scale(1.1); /* Opera */
+    }
+    .running-images{
+    height: 150px;
+    position: relative;
+    background: #fff;
+    margin: 11px;
+    list-style: none;
+    overflow: hidden;
+    }
+    .article-li{
+    height: 100px;
+    padding: 8px;
+    background: white;
+    }
+    .big-img{
+        transition-duration: 1s;
+       -moz-transition-duration: 1s; /* Firefox 4 */
+       -webkit-transition-duration: 1s; /* Safari 和 Chrome */
+       -o-transition-duration: 1s; /* Opera */
+        height: 150px;
+        width: 100%;
+    }
+    .f-li{
+      display:none;
+    }
+    .f3-li{
+      display:none;
+    }
     }
 </style>
 
@@ -502,13 +568,13 @@ import FooterComponents from './common/footer'
 
         }
 
-            that.setInter = setInterval(run,4000)
+            //that.setInter = setInterval(run,4000)
           $('.running-images').mouseenter(function(){
             console.log('clear',1)
-            clearInterval(that.setInter)
+            //clearInterval(that.setInter)
           })
           $('.running-images').mouseleave(function(){
-            that.setInter = setInterval(run,4000)
+            //that.setInter = setInterval(run,4000)
             console.log('set')
           })
           //日历计算1
