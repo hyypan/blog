@@ -26,7 +26,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^yafish/', include(yafish.urls)),
     url(r'^redactor/', include('redactor.urls')),
-    # url(r'^docs/', include('rest_framework_docs.urls')),
-    url(r'^docs/', schema_view),
+    url(r'^docs/', include('rest_framework_docs.urls')),
+    # url(r'^docs/', schema_view),
+    url(r'^api/', include('yafish.urls')),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ] + static(settings.BASE_URL, document_root=settings.MEDIA_ROOT)

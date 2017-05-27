@@ -739,6 +739,13 @@ import FooterComponents from './common/footer'
               }
 
             }
+        },
+        created:function(){
+        $.get('/api/articles/').success(function(response){
+          console.log('api',response)
+        }).error(function(err){
+          console.log(err)
+        })
         }
     }
 </script>

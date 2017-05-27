@@ -16,15 +16,8 @@ class ArticleViewSet(viewsets.ModelViewSet):
     serializer_class = ArticleSerializer
     queryset = m.Article.objects.all()
 
-    @list_route(methods=['post'])
-    def bbb(self, request):
-        """
-        """
-        return Response({'aaaa'})
+    @list_route(methods=['get'])
+    def get_articles_by_page(self, request):
 
-    @list_route(methods=['post'])
-    def aaa(self, request):
-        """
-        
-        """
-        pass
+        page = request.data.get('page')
+        return Response('ok')
