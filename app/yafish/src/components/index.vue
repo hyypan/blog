@@ -358,6 +358,10 @@
     }
 
 @media(max-width:1024px){
+    .a-img{
+    width: 30%;
+    height: 50px;
+    }
     .four-ul img{
         width:13px;
     }
@@ -374,10 +378,10 @@
     }
     .t-article{
     position: relative;
-    top: -109px;
-    left: 124px;
-    width: 57%;
-    background:rebeccapurple;
+    top: -68px;
+    left: 31%;
+    width: 76%;
+    background: rebeccapurple;
     }
     .big-img:hover{
        transform:rotate(0deg) scale(1.1);
@@ -395,7 +399,7 @@
     overflow: hidden;
     }
     .article-li{
-    height: 100px;
+    height: 77px;
     padding: 8px;
     background: white;
     }

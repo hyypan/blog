@@ -5,13 +5,12 @@
 <style scoped>
 footer{
     width: 100%;
-    height: 67px;
+    height: 47px;
     text-align: center;
-    padding-top: 50px;
     position: relative;
     float: left;
     border-top: 1px solid rgba(193, 193, 193, 0.5);
-    background:#7b7979;
+    background:#ffffff;
 }
 footer p{
     font-size: 14px;
