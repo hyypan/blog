@@ -118,6 +118,13 @@
                 </div>
               </li>
             </ul>
+            <div class="pages">
+              <span>上一页</span>
+                <ul>
+                  <li v-for="p in pages">{{p}}</li>
+                </ul>
+               <span>下一页</span>
+            </div>
           </li>
           <li class="f3-li" style="position: relative;
               float:right;
@@ -146,9 +153,20 @@
     .whole{
       overflow:hidden;
     }
+    .pages{
+        background: white;
+        margin: 14px;
+        text-align: center;
 
-
-
+    }
+    .pages ul {
+      display:inline;
+      margin-left: -42px;
+    }
+    .pages ul li{
+      margin:14px;
+      display:inline-block;
+    }
     .search-ul{
         margin-left: 4px;
     }
@@ -446,6 +464,7 @@ import FooterComponents from './common/footer'
     export default{
         data(){
             return{
+                pages:[1,2,3,4,5],
                 year:'',
                 mon:'',
                 day:'',

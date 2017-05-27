@@ -13,7 +13,7 @@ export default new VueRouter({
       name: 'hello',
       // component: require('../components/Hello.vue')
       component:function (resolve) {
-            require(['../components/Hello.vue'], resolve)
+            require(['../components/hello.vue'], resolve)
           }
     },
     {
@@ -24,35 +24,34 @@ export default new VueRouter({
     {
       path: '/content',
       name: 'content',
-      // component: require('../components/Content.vue'),
       component:function (resolve) {
-            require(['../components/Content.vue'], resolve)
+            require(['../components/content.vue'], resolve)
           }
     },
     {
       path: '/content/Articles',
       name:'articles',
-      component: require('../components/Articles.vue'),
+      component: require('../components/articles.vue'),
     },
         {
       path: '/content/Hotest',
           name:'hotest',
-      component: require('../components/Hotest.vue'),
+      component: require('../components/hotest.vue'),
     },
         {
       path: '/content/Newest',
           name:'newest',
-      component: require('../components/Newest.vue'),
+      component: require('../components/newest.vue'),
     },
         {
       path: '/content/Others',
           name:'others',
-      component: require('../components/Others.vue'),
+      component: require('../components/others.vue'),
     },
     {
       path: '/content/Detail',
       name: 'Detail',
-      component: require('../components/Detail.vue')
+      component: require('../components/detail.vue')
     },
     {
       path: '*',
