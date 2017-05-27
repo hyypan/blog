@@ -316,7 +316,7 @@
       padding:10px;
     }
     .f3-li{
-      width:245px;
+      width:100%;
       background:sliver;
     }
     .f3-li ul{
@@ -326,6 +326,10 @@
       position: relative;
       left:-7px;
       width:652px;
+       transition-duration: 1s;
+       -moz-transition-duration: 1s; /* Firefox 4 */
+       -webkit-transition-duration: 1s; /* Safari 和 Chrome */
+       -o-transition-duration: 1s; /* Opera */
 
     }
     .running-images{
@@ -423,6 +427,7 @@
       display:none;
     }
     .f3-li{
+      width:100%;
       display:none;
     }
     }

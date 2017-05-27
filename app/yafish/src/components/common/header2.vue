@@ -1,6 +1,8 @@
 <template>
     <div class="header">
       <div class="arrow" @click="leftAside">></div>
+      <div class="arrow-t" @click="rightAside"><</div>
+
     </div>
 </template>
 <style scoped>
@@ -23,7 +25,23 @@
     top: 31px;
     display:none;
   }
+   .arrow-t{
+    position: relative;
+    display:none;
+    float: right;
+    top: 21px;
+    right: 14px;
+    font-size: 21px;
+  }
 @media(max-width:1024px){
+   .arrow-t{
+    position: relative;
+    display:block;
+    float: right;
+    top: 21px;
+    right: 14px;
+    font-size: 21px;
+  }
   .arrow{
     width: 69px;
     background: rebeccapurple;
@@ -55,6 +73,23 @@
             $('.f-li').show()
             }else{
             $('.f-li').hide()
+            }
+          },
+            rightAside:function(){
+            var obj=$('.f3-li').css('display')
+            console.log('obj',obj)
+            if(obj=='none'){
+            $('.f3-li').show()
+            $('.f2-li').css({'width':'40%'})
+            $('.icons').css({'display':'none'})
+
+            }else{
+            $('.f3-li').hide(function(){
+            $('.icons').css({'display':'block'})
+
+            })
+            $('.f2-li').css({'width':'100%'})
+
             }
           }
         }
