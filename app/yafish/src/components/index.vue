@@ -309,6 +309,10 @@
         margin-top:73px;
     }
     .f-li{
+        transition-duration: width 1s;
+       -moz-transition-duration: width 1s; /* Firefox 4 */
+       -webkit-transition-duration: width 1s; /* Safari 和 Chrome */
+       -o-transition-duration: width 1s; /* Opera */
       width:245px;
       background:sliver;
     }
@@ -326,10 +330,10 @@
       position: relative;
       left:-7px;
       width:652px;
-       transition-duration: 1s;
-       -moz-transition-duration: 1s; /* Firefox 4 */
-       -webkit-transition-duration: 1s; /* Safari 和 Chrome */
-       -o-transition-duration: 1s; /* Opera */
+      transition-duration: 1s;
+      -moz-transition-duration: 1s; /* Firefox 4 */
+      -webkit-transition-duration: 1s; /* Safari 和 Chrome */
+      -o-transition-duration: 1s; /* Opera */
 
     }
     .running-images{
@@ -364,6 +368,9 @@
     }
 
 @media(max-width:1024px){
+    .days li{
+    margin-bottom:14px
+    }
     .icons{
     position: relative;
     left: -80px;

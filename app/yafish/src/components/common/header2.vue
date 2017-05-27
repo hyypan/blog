@@ -70,9 +70,9 @@
             var obj=$('.f-li').css('display')
             console.log('obj',obj)
             if(obj=='none'){
-            $('.f-li').show()
+            $('.f-li').show(500)
             }else{
-            $('.f-li').hide()
+            $('.f-li').hide(500)
             }
           },
             rightAside:function(){
