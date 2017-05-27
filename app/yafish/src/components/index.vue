@@ -741,7 +741,7 @@ import FooterComponents from './common/footer'
             }
         },
         created:function(){
-        $.get('/api/articles/').success(function(response){
+        $.get('/api/articles/get_articles_by_page',{'page':1}).success(function(response){
           console.log('api',response)
         }).error(function(err){
           console.log(err)

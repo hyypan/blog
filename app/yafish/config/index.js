@@ -28,7 +28,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api/':{
+      '/api': {
         // target:'http://www.youngpeng.com',
         target:'http://127.0.0.1:8000',
         changeOrigin: true,
