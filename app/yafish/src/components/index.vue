@@ -1,7 +1,7 @@
 <template>
     <div>
       <header-components></header-components>
-      <div>
+      <div class="whole">
         <ul class="f-ul">
           <li class="f-li">
             <ul>
@@ -143,7 +143,9 @@
     body{
         background-color:#ff0000;
     }
-
+    .whole{
+      overflow:hidden;
+    }
 
 
 
@@ -214,7 +216,7 @@
         padding-left: 5px;
     }
     .portrail{
-    background: rgb(238, 238, 238);
+    background: white;
     margin-top: 1px;
     height: 208px;
     }
@@ -361,7 +363,7 @@
     .icons{
     position: relative;
     left: -80px;
-    top: 3px;
+    top: -8px;
     }
     .a-img{
     display: block;
